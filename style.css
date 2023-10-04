@@ -1,0 +1,106 @@
+/* FONTES -> BUNNER */ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --font-pop: 'Poppins', sans-serif;
+}
+
+html{
+    overflow-x :hidden;    
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#backdropfilter{
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+
+#bunner{
+    overflow: hidden;
+    color: white;
+    font-family: var(--font-pop);
+}
+
+#bunnerTittle1{
+    line-height: 50%;
+    font-size: 110px;
+    text-align: center;
+}
+
+#bunnerTittle2{
+    font-size: 55px;
+    text-align: end;
+}
+
+#proceedButton button{
+    padding: 10px 20px;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    appearance: none;
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    font-size: 35px;
+    margin: 50px;
+    transition: all .55s ease;
+}
+
+#proceedButton a{
+    text-decoration: none;
+    color: white;
+}
+
+#proceedButton button:hover{
+    background-color: rgba(255, 255, 255, 0.02);
+    transform: translateY(10px);
+}
+
+#transition{
+    margin-top: -5vh;
+    position: absolute;
+    background-image: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
+    height: 5vh;
+    width: 100%;
+}
+
+#periodicTabble{
+    font-family: 'Poppins', sans-serif;;
+    height: 100vh;
+}
+
+#periodicTabble div{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#periodicTabble table{
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+#periodicTabble td{
+    text-align: center;
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+}
+
+#periodicTabble .vacuo{
+    border: 0px;
+}
+
