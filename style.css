@@ -2,6 +2,21 @@
 
 :root{
     --font-pop: 'Poppins', sans-serif;
+    --metais-alcalinos: #faad08;
+    --metais-alcalinosterrosos: #FFE100;
+    --metais-deTransicao: #03658C;
+    --lantanideos: #ee8434;
+    --actinideos: #F2C4CD;
+    --familia-doBoro: #E849B8;
+    --familia-doCarbono: #B99EE8;
+    --familia-doNitrogenio: #038C65;
+    --calcogenios: #F2668B;
+    --halogenios: #049DD9;
+    --gases-nobres: #803DDB;
+
+
+    --metais: #E38717;
+    --nao-metais: #6B94FF;
 }
 
 html{
@@ -94,13 +109,38 @@ html{
 }
 
 #periodicTabble td{
+    cursor: pointer;
     text-align: center;
     width: 75px;
     height: 75px;
-    border: 2px solid black;
+    box-shadow: 0px 0px 5px 0px black;
+    transition: all .2s ease;
+}
+
+#periodicTabble td:hover{
+    filter: brightness(80%);
 }
 
 #periodicTabble .vacuo{
+    cursor: default;
     border: 0px;
+    box-shadow: 0px 0px 0px;
 }
+#periodicTabble .vacuo:hover{
+    box-shadow: none;
+}
+
+/* Elementos da Tabela Periodica -> Grupos/Familias */
+
+.naoMetal{ background-color: var(--nao-metais); }
+.metal{ background-color: var(--metais); }
+.alcalino{ background-color: var(--metais-alcalinos); }
+.terroso{ background-color: var(--metais-alcalinosterrosos); }
+.metaisTransicao{ background-color: var(--metais-deTransicao); }
+.familiaBoro{ background-color: var(--familia-doBoro); }
+.familiaCarbono{ background-color: var(--familia-doCarbono); }
+.familiaNitrogenio{ background-color: var(--familia-doNitrogenio); }
+.calcogenio{ background-color: var(--calcogenios); }
+.halogenio{ background-color: var(--halogenios); }
+.gasNobre{ background-color: var(--gases-nobres); }
 
