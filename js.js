@@ -29,7 +29,17 @@ function getAllElementosClas() {
         })
         
     }
-    
+
 }
 
-getAllElementosClas()
+getAllElementosClas();
+
+function temperatura(){
+    const tempbar = document.getElementById("tempBar");
+    const temperatura = document.getElementById("temperatura");
+    tempbar.addEventListener("input", function() {
+        temperatura.value = tempbar.value+"°C";
+    });
+}
+
+temperatura();

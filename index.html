@@ -53,7 +53,7 @@
                     </tr>
                     <tr>
                         <td class="numeroposicao">1</td>
-                        <td class="naoMetal alcalino familia1" id="H">H</td>
+                        <td class="elemento alcalino naoMetal" id="H">H</td>
                         <td colspan="16" id="legenda">
                             <div class="familias">
                                 <div class="elemento alcalino mouse">Alcalinos</div>
@@ -67,7 +67,7 @@
                                 <div class="elemento gasNobre mouse">Gases Nobres</div>
                             </div>
                         </td>
-                        <td class="naoMetal gasNobre">He</td>
+                        <td class="elemento gasNobre naoMetal">He</td>
                     </tr>
                     <tr>
                         <td class="numeroposicao">2</td>
@@ -82,7 +82,7 @@
                                 <div class="gas" style="border: 2px solid black;">Gás</div>
                             </div>
                         </td>
-                        <td class="elemento familiaBoro naoMetal  liquido">B</td>
+                        <td class="elemento familiaBoro naoMetal">B</td>
                         <td class="elemento familiaCarbono naoMetal">C</td>
                         <td class="elemento familiaNitrogenio naoMetal">N</td>
                         <td class="elemento calcogenio naoMetal">O</td>
@@ -91,101 +91,102 @@
                     </tr>
                     <tr>
                         <td class="numeroposicao">3</td>
-                        <td class="metal alcalino">Na</td>
-                        <td class="metal terroso">Mg</td>
+                        <td class="elemento alcalino metal ">Na</td>
+                        <td class="elemento terroso metal ">Mg</td>
                         <td colspan="10" class="vacuo">
-                            <input type="range" max="6000" min="-273" value="0" name="tempBar">
+                            <input type="range" max="6000" min="-273" value="0" id="tempBar">
+                            <input type="text" id="temperatura" disabled value="0°C">
                         </td>
-                        <td class="metal familiaBoro">Al</td>
-                        <td class="naoMetal familiaCarbono">Si</td>
-                        <td class="naoMetal familiaNitrogenio">P</td>
-                        <td class="naoMetal calcogenio">S</td>
-                        <td class="naoMetal halogenio">Cl</td>
-                        <td class="naoMetal gasNobre">Ar</td>
+                        <td class="elemento familiaBoro metal">Al</td>
+                        <td class="elemento familiaCarbono naoMetal">Si</td>
+                        <td class="elemento familiaNitrogenio naoMetal ">P</td>
+                        <td class="elemento calcogenio naoMetal">S</td>
+                        <td class="elemento halogenio naoMetal">Cl</td>
+                        <td class="elemento gasNobre naoMetal">Ar</td>
                     </tr>
                     <tr>
                         <td class="numeroposicao">4</td>
-                        <td class="metal alcalino">K</td>
-                        <td class="metal terroso">Ca</td>
-                        <td class="metal metaisTransicao">Sc</td>
-                        <td class="metal metaisTransicao">Ti</td>
-                        <td class="metal metaisTransicao">V</td>
-                        <td class="metal metaisTransicao">Cr</td>
-                        <td class="metal metaisTransicao">Mn</td>
-                        <td class="metal metaisTransicao">Fe</td>
-                        <td class="metal metaisTransicao">Co</td>
-                        <td class="metal metaisTransicao">Ni</td>
-                        <td class="metal metaisTransicao">Cu</td>
-                        <td class="metal metaisTransicao">Zn</td>
-                        <td class="metal familiaBoro">Ga</td>
-                        <td class="metal familiaCarbono">Ge</td>
-                        <td class="naoMetal familiaNitrogenio">As</td>
-                        <td class="naoMetal calcogenio">Se</td>
-                        <td class="naoMetal halogenio">Br</td>
-                        <td class="naoMetal gasNobre">Kr</td>
+                        <td class="elemento alcalino metal">K</td>
+                        <td class="elemento terroso metal">Ca</td>
+                        <td class="elemento metaisTransicao metal">Sc</td>
+                        <td class="elemento metaisTransicao metal">Ti</td>
+                        <td class="elemento metaisTransicao metal">V</td>
+                        <td class="elemento metaisTransicao metal">Cr</td>
+                        <td class="elemento metaisTransicao metal">Mn</td>
+                        <td class="elemento metaisTransicao metal">Fe</td>
+                        <td class="elemento metaisTransicao metal">Co</td>
+                        <td class="elemento metaisTransicao metal">Ni</td>
+                        <td class="elemento metaisTransicao metal">Cu</td>
+                        <td class="elemento metaisTransicao metal">Zn</td>
+                        <td class="elemento familiaBoro metal">Ga</td>
+                        <td class="elemento familiaCarbono metal">Ge</td>
+                        <td class="elemento familiaNitrogenio naoMetal">As</td>
+                        <td class="elemento calcogenio naoMetal">Se</td>
+                        <td class="elemento halogenio naoMetal">Br</td>
+                        <td class="elemento gasNobre naoMetal">Kr</td>
                     </tr>
                     <tr>
                         <td class="numeroposicao">5</td>
-                        <td class="metal alcalino">Rb</td>
-                        <td class="metal terroso">Sr</td>
-                        <td class="metal metaisTransicao">Y</td>
-                        <td class="metal metaisTransicao">Zr</td>
-                        <td class="metal metaisTransicao">Nb</td>
-                        <td class="metal metaisTransicao">Mo</td>
-                        <td class="metal metaisTransicao">Tc</td>
-                        <td class="metal metaisTransicao">Ru</td>
-                        <td class="metal metaisTransicao">Rh</td>
-                        <td class="metal metaisTransicao">Pd</td>
-                        <td class="metal metaisTransicao">Ag</td>
-                        <td class="metal metaisTransicao">Cd</td>
-                        <td class="metal familiaBoro">In</td>
-                        <td class="metal familiaCarbono">Sn</td>
-                        <td class="metal familiaNitrogenio">Sb</td>
-                        <td class="naoMetal calcogenio">Te</td>
-                        <td class="naoMetal halogenio">I</td>
-                        <td class="naoMetal gasNobre">Xe</td>
+                        <td class="elemento alcalino metal">Rb</td>
+                        <td class="elemento terroso metal">Sr</td>
+                        <td class="elemento metaisTransicao metal">Y</td>
+                        <td class="elemento metaisTransicao metal">Zr</td>
+                        <td class="elemento metaisTransicao metal">Nb</td>
+                        <td class="elemento metaisTransicao metal">Mo</td>
+                        <td class="elemento metaisTransicao metal">Tc</td>
+                        <td class="elemento metaisTransicao metal">Ru</td>
+                        <td class="elemento metaisTransicao metal">Rh</td>
+                        <td class="elemento metaisTransicao metal">Pd</td>
+                        <td class="elemento metaisTransicao metal">Ag</td>
+                        <td class="elemento metaisTransicao metal">Cd</td>
+                        <td class="elemento familiaBoro metal">In</td>
+                        <td class="elemento familiaCarbono metal">Sn</td>
+                        <td class="elemento familiaNitrogenio metal">Sb</td>
+                        <td class="elemento calcogenio naoMetal">Te</td>
+                        <td class="elemento halogenio naoMetal">I</td>
+                        <td class="elemento gasNobre naoMetal">Xe</td>
                     </tr>
                     <tr>
                         <td class="numeroposicao">6</td>
-                        <td class="metal alcalino">Cs</td>
-                        <td class="metal terroso">Ba</td>
+                        <td class="elemento alcalino metal">Cs</td>
+                        <td class="elemento terroso metal">Ba</td>
                         <td>57-71</td>
-                        <td class="metal metaisTransicao">Hf</td>
-                        <td class="metal metaisTransicao">Ta</td>
-                        <td class="metal metaisTransicao">W</td>
-                        <td class="metal metaisTransicao">Re</td>
-                        <td class="metal metaisTransicao">Os</td>
-                        <td class="metal metaisTransicao">Ir</td>
-                        <td class="metal metaisTransicao">Pt</td>
-                        <td class="metal metaisTransicao">Au</td>
-                        <td class="metal metaisTransicao">Hg</td>
-                        <td class="metal familiaBoro">Tl</td>
-                        <td class="metal familiaCarbono">Pb</td>
-                        <td class="metal familiaNitrogenio">Bi</td>
-                        <td class="metal calcogenio">Po</td>
-                        <td class="naoMetal halogenio">At</td>
-                        <td class="naoMetal gasNobre">Rn</td>
+                        <td class="elemento metaisTransicao metal">Hf</td>
+                        <td class="elemento metaisTransicao metal">Ta</td>
+                        <td class="elemento metaisTransicao metal">W</td>
+                        <td class="elemento metaisTransicao metal">Re</td>
+                        <td class="elemento metaisTransicao metal">Os</td>
+                        <td class="elemento metaisTransicao metal">Ir</td>
+                        <td class="elemento metaisTransicao metal">Pt</td>
+                        <td class="elemento metaisTransicao metal">Au</td>
+                        <td class="elemento metaisTransicao metal">Hg</td>
+                        <td class="elemento familiaBoro metal">Tl</td>
+                        <td class="elemento familiaCarbono metal">Pb</td>
+                        <td class="elemento familiaNitrogenio metal">Bi</td>
+                        <td class="elemento calcogenio metal">Po</td>
+                        <td class="elemento halogenio naoMetal">At</td>
+                        <td class="elemento gasNobre naoMetal">Rn</td>
                     </tr>
                     <tr>
                         <td class="numeroposicao">7</td>
-                        <td class="metal alcalino">Fr</td>
-                        <td class="metal terroso">Ra</td>
+                        <td class="elemento alcalino metal">Fr</td>
+                        <td class="elemento terroso metal">Ra</td>
                         <td>89-103</td>
-                        <td class="metal metaisTransicao">Rf</td>
-                        <td class="metal metaisTransicao">Db</td>
-                        <td class="metal metaisTransicao">Sg</td>
-                        <td class="metal metaisTransicao">Bh</td>
-                        <td class="metal metaisTransicao">Hs</td>
-                        <td class="metal metaisTransicao">Mt</td>
-                        <td class="metal metaisTransicao">Ds</td>
-                        <td class="metal metaisTransicao">Rg</td>
-                        <td class="metal metaisTransicao">Cn</td>
-                        <td class="metal familiaBoro">Nh</td>
-                        <td class="metal familiaCarbono">Fl</td>
-                        <td class="metal familiaNitrogenio">Mc</td>
-                        <td class="metal calcogenio">Lv</td>
-                        <td class="naoMetal halogenio">Ts</td>
-                        <td class="naoMetal gasNobre">Og</td>
+                        <td class="elemento metaisTransicao metal">Rf</td>
+                        <td class="elemento metaisTransicao metal">Db</td>
+                        <td class="elemento metaisTransicao metal">Sg</td>
+                        <td class="elemento metaisTransicao metal">Bh</td>
+                        <td class="elemento metaisTransicao metal">Hs</td>
+                        <td class="elemento metaisTransicao metal">Mt</td>
+                        <td class="elemento metaisTransicao metal">Ds</td>
+                        <td class="elemento metaisTransicao metal">Rg</td>
+                        <td class="elemento metaisTransicao metal">Cn</td>
+                        <td class="elemento familiaBoro metal">Nh</td>
+                        <td class="elemento familiaCarbono metal">Fl</td>
+                        <td class="elemento familiaNitrogenio metal">Mc</td>
+                        <td class="elemento calcogenio metal">Lv</td>
+                        <td class="elemento halogenio naoMetal">Ts</td>
+                        <td class="elemento gasNobre naoMetal">Og</td>
                     </tr>
                 </table>
             </div>

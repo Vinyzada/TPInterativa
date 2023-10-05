@@ -33,6 +33,8 @@ html{
     box-sizing: border-box;
 }
 
+/* Pagina de Inicio */
+
 #backdropfilter{
     backdrop-filter: blur(2px);
     display: flex;
@@ -85,6 +87,8 @@ html{
     transform: translateY(10px);
 }
 
+/* Inicio Tabela Periodica */
+
 #transition{
     margin-top: -5vh;
     position: absolute;
@@ -118,10 +122,6 @@ html{
     height: 75px;
     box-shadow: 0px 0px 5px 0px black;
     transition: all .2s ease;
-}
-
-#H{
-    background-color: var(--nao-metais) !important;
 }
 
 #periodicTable td:hover{
@@ -159,18 +159,26 @@ html{
 #periodicTable td.numeroposicao{
     box-shadow: 0px 0px 0px transparent;
 }
+
+#H{
+    background-color: var(--nao-metais) !important;
+}
+
 #periodicTable .familias{
     justify-content: space-around;
     text-align: center;
     display: flex;
 }
+
 #periodicTable .familias div{
     padding: 5px;
     margin: 0px 10px;
 }
+
 #periodicTable #legenda{
     box-shadow: 0px 0px 0px transparent;
 }
+
 #periodicTable #legenda:hover{
     filter: brightness(100%);
 }
@@ -182,12 +190,22 @@ input[type="range"]{
     background-image: linear-gradient(90deg, #0011ff 0%, #ffffff 22%, #e3ff00 49%, #ff7b00 75%, #ff0003 100%);
     height: 15px;
     transform-origin: 400px;
-
+    outline: none;
 }
+
 input[type="range"]::-webkit-slider-thumb{
     appearance: none;
     background-color: black;
     width: 18px;
     height: 18px;
     border-radius: 100%;
+}
+
+input[type="text"]{
+    color: black;
+    appearance: none;
+    background-color: white;
+    border: 0px;
+    font-size: 25px;
+    text-align: center;
 }
