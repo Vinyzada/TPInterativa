@@ -27,37 +27,84 @@
             </div>
         </section>
         <div id="transition"></div>
-        <section id="periodicTabble">
-            <div>
+        <section id="periodicTable">
+            <div id="mesa">
                 <table>
                     <tr>
-                        <td class="naoMetal">H</td>
-                        <td colspan="16" class="vacuo"></td>
+                        <td class="numeroposicao"></td>
+                        <td class="numeroposicao">1</td>
+                        <td class="numeroposicao">2</td>
+                        <td class="numeroposicao">3</td>
+                        <td class="numeroposicao">4</td>
+                        <td class="numeroposicao">5</td>
+                        <td class="numeroposicao">6</td>
+                        <td class="numeroposicao">7</td>
+                        <td class="numeroposicao">8</td>
+                        <td class="numeroposicao">9</td>
+                        <td class="numeroposicao">10</td>
+                        <td class="numeroposicao">11</td>
+                        <td class="numeroposicao">12</td>
+                        <td class="numeroposicao">13</td>
+                        <td class="numeroposicao">14</td>
+                        <td class="numeroposicao">15</td>
+                        <td class="numeroposicao">16</td>
+                        <td class="numeroposicao">17</td>
+                        <td class="numeroposicao">18</td>
+                    </tr>
+                    <tr>
+                        <td class="numeroposicao">1</td>
+                        <td class="naoMetal alcalino familia1" id="H">H</td>
+                        <td colspan="16" id="legenda">
+                            <div class="familias">
+                                <div class="elemento alcalino mouse">Alcalinos</div>
+                                <div class="elemento terroso mouse">Terrosos</div>
+                                <div class="elemento metaisTransicao mouse">Transição</div>
+                                <div class="elemento familiaBoro mouse">Fabilia do Boro</div>
+                                <div class="elemento familiaCarbono mouse">Familia do Carbono</div>
+                                <div class="elemento familiaNitrogenio mouse">Familia do Nitrogenio</div>
+                                <div class="elemento calcogenio mouse">Calcogenios</div>
+                                <div class="elemento halogenio mouse">Halogenios</div>
+                                <div class="elemento gasNobre mouse">Gases Nobres</div>
+                            </div>
+                        </td>
                         <td class="naoMetal gasNobre">He</td>
                     </tr>
                     <tr>
-                        <td class="metal alcalino">Li</td>
-                        <td class="metal terroso">Be</td>
-                        <td colspan="10" class="vacuo"></td>
-                        <td class="naoMetal familiaBoro">B</td>
-                        <td class="naoMetal familiaCarbono">C</td>
-                        <td class="naoMetal familiaNitrogenio">N</td>
-                        <td class="naoMetal calcogenio">O</td>
-                        <td class="naoMetal halogenio">F</td>
-                        <td class="naoMetal gasNobre">Ne</td>
+                        <td class="numeroposicao">2</td>
+                        <td class="elemento alcalino metal ">Li</td>
+                        <td class="elemento terroso  metal ">Be</td>
+                        <td colspan="10" id="legenda">
+                            <div class="familias">
+                                <div class="metal">Metais</div>
+                                <div class="naoMetal">Não Metais</div>
+                                <div class="solido" style="border: 2px solid black;">Sólido</div>
+                                <div class="liquido" style="border: 2px solid black;">Líquido</div>
+                                <div class="gas" style="border: 2px solid black;">Gás</div>
+                            </div>
+                        </td>
+                        <td class="elemento familiaBoro naoMetal  liquido">B</td>
+                        <td class="elemento familiaCarbono naoMetal">C</td>
+                        <td class="elemento familiaNitrogenio naoMetal">N</td>
+                        <td class="elemento calcogenio naoMetal">O</td>
+                        <td class="elemento halogenio naoMetal">F</td>
+                        <td class="elemento gasNobre naoMetal ">Ne</td>
                     </tr>
                     <tr>
+                        <td class="numeroposicao">3</td>
                         <td class="metal alcalino">Na</td>
                         <td class="metal terroso">Mg</td>
-                        <td colspan="10" class="vacuo"></td>
+                        <td colspan="10" class="vacuo">
+                            <input type="range" max="6000" min="-273" value="0" name="tempBar">
+                        </td>
                         <td class="metal familiaBoro">Al</td>
                         <td class="naoMetal familiaCarbono">Si</td>
                         <td class="naoMetal familiaNitrogenio">P</td>
                         <td class="naoMetal calcogenio">S</td>
-                        <td class="naoMetal">Cl</td>
+                        <td class="naoMetal halogenio">Cl</td>
                         <td class="naoMetal gasNobre">Ar</td>
                     </tr>
                     <tr>
+                        <td class="numeroposicao">4</td>
                         <td class="metal alcalino">K</td>
                         <td class="metal terroso">Ca</td>
                         <td class="metal metaisTransicao">Sc</td>
@@ -78,6 +125,7 @@
                         <td class="naoMetal gasNobre">Kr</td>
                     </tr>
                     <tr>
+                        <td class="numeroposicao">5</td>
                         <td class="metal alcalino">Rb</td>
                         <td class="metal terroso">Sr</td>
                         <td class="metal metaisTransicao">Y</td>
@@ -93,11 +141,12 @@
                         <td class="metal familiaBoro">In</td>
                         <td class="metal familiaCarbono">Sn</td>
                         <td class="metal familiaNitrogenio">Sb</td>
-                        <td class="naoMeta calcogenio">Te</td>
+                        <td class="naoMetal calcogenio">Te</td>
                         <td class="naoMetal halogenio">I</td>
                         <td class="naoMetal gasNobre">Xe</td>
                     </tr>
                     <tr>
+                        <td class="numeroposicao">6</td>
                         <td class="metal alcalino">Cs</td>
                         <td class="metal terroso">Ba</td>
                         <td>57-71</td>
@@ -118,6 +167,7 @@
                         <td class="naoMetal gasNobre">Rn</td>
                     </tr>
                     <tr>
+                        <td class="numeroposicao">7</td>
                         <td class="metal alcalino">Fr</td>
                         <td class="metal terroso">Ra</td>
                         <td>89-103</td>
@@ -144,5 +194,6 @@
     <footer>
 
     </footer>
+    <script src="js.js"></script>
 </body>
 </html>
