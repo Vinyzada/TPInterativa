@@ -36,6 +36,14 @@ function foraMetais() {
     let elementos = getAllElementos();
     for (let e of elementos) {
         e.style.opacity = 1;
+        if (e.classList[1] === 'alcalino') {
+            e.classList.add('metal');
+            if (e.id === 'H') {
+                e.classList.remove('metal');
+                e.classList.add('naoMetal');
+            }
+
+        }
         if (e.classList[1] === 'metaisTransicao') {
             e.classList.add('metal');
             if (e.classList[2] === 'mouse') {
