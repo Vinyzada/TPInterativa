@@ -29,9 +29,7 @@ function getAllElementosClas() {
             const familia = e.classList[1];
             selectAllName(familia);
         })
-
     }
-
 }
 
 function foraMetais() {
@@ -90,9 +88,7 @@ function foraMetais() {
             if (e.classList[2] === 'mouse') {
                 e.classList.remove('naoMetais');
             }
-
         }
-
     }
 }
 getAllElementosClas();
@@ -104,7 +100,6 @@ function temperatura() {
         temperatura.value = tempbar.value + "°C";
     });
 }
-
 temperatura();
 
 
