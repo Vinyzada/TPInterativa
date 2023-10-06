@@ -55,7 +55,7 @@
                         <td class="numeroposicao">1</td>
                         <td class="elemento alcalino naoMetal" id="H">H</td>
                         <td colspan="16" id="legenda">
-                            <div class="familias">
+                            <div class="familias" onmouseout="foraMetais()">
                                 <div class="elemento alcalino mouse">Alcalinos</div>
                                 <div class="elemento terroso mouse">Terrosos</div>
                                 <div class="elemento metaisTransicao mouse">Transição</div>
@@ -82,10 +82,10 @@
                                 <div class="gas" style="border: 2px solid black;">Gás</div>
                             </div>
                         </td>
-                        <td class="elemento familiaBoro naoMetal">B</td>
-                        <td class="elemento familiaCarbono naoMetal">C</td>
-                        <td class="elemento familiaNitrogenio naoMetal">N</td>
-                        <td class="elemento calcogenio naoMetal">O</td>
+                        <td class="elemento familiaBoro naoMetal ametal">B</td>
+                        <td class="elemento familiaCarbono naoMetal ametal">C</td>
+                        <td class="elemento familiaNitrogenio naoMetal ametal">N</td>
+                        <td class="elemento calcogenio naoMetal ametal">O</td>
                         <td class="elemento halogenio naoMetal">F</td>
                         <td class="elemento gasNobre naoMetal ">Ne</td>
                     </tr>
@@ -98,9 +98,9 @@
                             <input type="text" id="temperatura" disabled value="0°C">
                         </td>
                         <td class="elemento familiaBoro metal">Al</td>
-                        <td class="elemento familiaCarbono naoMetal">Si</td>
-                        <td class="elemento familiaNitrogenio naoMetal ">P</td>
-                        <td class="elemento calcogenio naoMetal">S</td>
+                        <td class="elemento familiaCarbono naoMetal ametal">Si</td>
+                        <td class="elemento familiaNitrogenio naoMetal ametal">P</td>
+                        <td class="elemento calcogenio naoMetal ametal">S</td>
                         <td class="elemento halogenio naoMetal">Cl</td>
                         <td class="elemento gasNobre naoMetal">Ar</td>
                     </tr>
@@ -120,8 +120,8 @@
                         <td class="elemento metaisTransicao metal">Zn</td>
                         <td class="elemento familiaBoro metal">Ga</td>
                         <td class="elemento familiaCarbono metal">Ge</td>
-                        <td class="elemento familiaNitrogenio naoMetal">As</td>
-                        <td class="elemento calcogenio naoMetal">Se</td>
+                        <td class="elemento familiaNitrogenio naoMetal ametal">As</td>
+                        <td class="elemento calcogenio naoMetal ametal">Se</td>
                         <td class="elemento halogenio naoMetal">Br</td>
                         <td class="elemento gasNobre naoMetal">Kr</td>
                     </tr>
@@ -142,7 +142,7 @@
                         <td class="elemento familiaBoro metal">In</td>
                         <td class="elemento familiaCarbono metal">Sn</td>
                         <td class="elemento familiaNitrogenio metal">Sb</td>
-                        <td class="elemento calcogenio naoMetal">Te</td>
+                        <td class="elemento calcogenio naoMetal ametal">Te</td>
                         <td class="elemento halogenio naoMetal">I</td>
                         <td class="elemento gasNobre naoMetal">Xe</td>
                     </tr>
