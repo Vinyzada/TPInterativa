@@ -6,12 +6,15 @@ function getAllMouse() {
     return document.querySelectorAll('.mouse');
 }
 
+
 function selectAllName(name) {
     let elementos = getAllElementos();
     for (let e of elementos) {
-        console.log(e);
-        if (e.classList[1] != name) {
+        if (e.classList[1] != name ||e.classList[1] != name ) {
             e.style.opacity = 0.3;
+            if(e.classList[1] === 'selectM'|| e.classList[1] === 'selectA'){
+                e.style.opacity = 1;
+            }
         }
         else {
             e.style.opacity = 1;
@@ -23,7 +26,6 @@ function selectAllName(name) {
 
 function getAllElementosClas() {
     const clas = getAllMouse();
-    console.log(clas);
     for (let e of clas) {
         e.addEventListener('mouseover', function () {
             const familia = e.classList[1];
@@ -31,18 +33,30 @@ function getAllElementosClas() {
         })
     }
 }
+getAllElementosClas();
 
-function foraMetais() {
+function fora() {
     let elementos = getAllElementos();
     for (let e of elementos) {
         e.style.opacity = 1;
         if (e.classList[1] === 'alcalino') {
             e.classList.add('metal');
-            if (e.id === 'H') {
+            if(e.classList[2] === 'ametal' || e.classList[3] === 'ametal' ){
                 e.classList.remove('metal');
+                e.classList.remove('ametal');
                 e.classList.add('naoMetal');
+                e.classList.add('ametal');
+            }
+            if(e.classList[2] === 'mouse'){
+                e.classList.remove('metal');
             }
 
+        }
+        if (e.classList[1] === 'terroso') {
+            e.classList.add('metal');
+            if(e.classList[2] === 'mouse'){
+                e.classList.remove('metal');
+            }
         }
         if (e.classList[1] === 'metaisTransicao') {
             e.classList.add('metal');
@@ -55,7 +69,9 @@ function foraMetais() {
             e.classList.add('metal');
             if(e.classList[2] === 'ametal' || e.classList[3] === 'ametal' ){
                 e.classList.remove('metal');
+                e.classList.remove('ametal');
                 e.classList.add('naoMetal');
+                e.classList.add('ametal');
             }
             else if(e.classList[2] === 'mouse'){
                 e.classList.remove('metal');
@@ -65,7 +81,9 @@ function foraMetais() {
             e.classList.add('metal');
             if(e.classList[2] === 'ametal' || e.classList[3] === 'ametal' ){
                 e.classList.remove('metal');
+                e.classList.remove('ametal');
                 e.classList.add('naoMetal');
+                e.classList.add('ametal');
             }
             else if(e.classList[2] === 'mouse'){
                 e.classList.remove('metal');
@@ -75,31 +93,85 @@ function foraMetais() {
             e.classList.add('metal');
             if(e.classList[2] === 'ametal' || e.classList[3] === 'ametal' ){
                 e.classList.remove('metal');
+                e.classList.remove('ametal');
                 e.classList.add('naoMetal');
+                e.classList.add('ametal');
             }
             else if(e.classList[2] === 'mouse'){
                 e.classList.remove('metal');
+            }
+        }
+          
+        if(e.classList[1] === 'gasNobre'){
+            e.classList.add('naoMetal');
+            if(e.classList[2] === 'mouse'){
+                e.classList.remove('naoMetal');
             }
         }
         if(e.classList[1] === 'calcogenio'){
             e.classList.add('metal');
             if(e.classList[2] === 'ametal' || e.classList[3] === 'ametal' ){
                 e.classList.remove('metal');
+                e.classList.remove('ametal');
                 e.classList.add('naoMetal');
+                e.classList.add('ametal');
             }
             else if(e.classList[2] === 'mouse'){
                 e.classList.remove('metal');
             }
         }
-        if (e.classList[1] === 'halogenio') {
+        if(e.classList[1] === 'halogenio'){
             e.classList.add('naoMetal');
-            if (e.classList[2] === 'mouse') {
-                e.classList.remove('naoMetais');
+            if(e.classList[2] === 'ametal' || e.classList[3] === 'ametal' ){
+                e.classList.remove('metal');
+                e.classList.add('naoMetal');
+            }
+            if(e.classList[2] === 'mouse'){
+                e.classList.remove('metal');
             }
         }
+        if (e.classList[1] === 'lantanideo') {
+            e.classList.add('metal');
+            if(e.classList[2] === 'mouse'){
+                e.classList.remove('metal');
+            }
+        }
+        if (e.classList[1] === 'actinideo') {
+            e.classList.add('metal');
+            if(e.classList[2] === 'mouse'){
+                e.classList.remove('metal');
+            }
+        }
+  
+     
     }
 }
-getAllElementosClas();
+
+function selectAllFamilia(familia) {
+    let fam = getAllElementos()
+    for (let f of fam) {
+        console.log(f);
+        if (f.classList[2] != familia) {
+            f.style.opacity = 0.3;
+        }
+        else {
+            f.style.opacity = 1;
+            if(f.classList[1] === ' alcalino'){
+                f.classList.remove('alcalino');
+            }
+        }
+
+    }
+}
+
+metais = document.querySelector('.selectM ');
+ametais = document.querySelector('.selectA');
+metais.addEventListener('mouseover', function () {
+    selectAllFamilia("metal");
+})
+ametais.addEventListener('mouseover', function () {
+    selectAllFamilia("naoMetal");
+})
 
 function temperatura() {
     const tempbar = document.getElementById("tempBar");

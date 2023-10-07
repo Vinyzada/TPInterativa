@@ -5,8 +5,8 @@
     --metais-alcalinos: #faad08;
     --metais-alcalinosterrosos: #FFE100;
     --metais-deTransicao: #03658C;
-    --lantanideos: #ee8434;
-    --actinideos: #F2C4CD;
+    --lantanideos: #6af75e;
+    --actinideos: #f5a3b4;
     --familia-doBoro: #E849B8;
     --familia-doCarbono: #B99EE8;
     --familia-doNitrogenio: #038C65;
@@ -143,28 +143,26 @@ html{
 
 .naoMetal{ background-color: var(--nao-metais) !important; }
 .metal{ background-color: var(--metais) !important; }
-.alcalino{ background-color: var(--metais-alcalinos) !important;}
-.terroso{ background-color: var(--metais-alcalinosterrosos) !important; }
+.alcalino{ background-color: var(--metais-alcalinos) ;}
+.terroso{ background-color: var(--metais-alcalinosterrosos)  }
 .metaisTransicao{ background-color: var(--metais-deTransicao); }
 .familiaBoro{ background-color: var(--familia-doBoro); }
 .familiaCarbono{ background-color: var(--familia-doCarbono); }
 .familiaNitrogenio{ background-color: var(--familia-doNitrogenio); }
 .calcogenio{ background-color: var(--calcogenios); }
 .halogenio{ background-color: var(--halogenios); }
-.gasNobre{ background-color: var(--gases-nobres) !important; }
+.gasNobre{ background-color: var(--gases-nobres) }
 .solido{ color: var(--solido);}
 .liquido{ color: var(--liquido);}
 .gas{ color: var(--gas);}
-.lantanideo{background-color: var(--lantanideos) !important;}
-.actinideo{background-color: var(--actinideos) !important;}
+.lantanideo{background-color: var(--lantanideos) }
+.actinideo{background-color: var(--actinideos) }
 
 #periodicTable td.numeroposicao{
     box-shadow: 0px 0px 0px transparent;
 }
 
-#H{
-    background-color: var(--nao-metais) !important;
-}
+
 
 #periodicTable .familias{
     justify-content: space-around;
