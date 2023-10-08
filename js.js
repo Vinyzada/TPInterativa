@@ -173,6 +173,52 @@ ametais.addEventListener('mouseover', function () {
     selectAllFamilia("naoMetal");
 })
 
+function getAllCuriosidades() {
+    return document.querySelectorAll('.curiosidades');
+}
+
+
+function getCuriosidadeByID(id) {
+    const curiosidades = getAllCuriosidades();
+
+    for (let c of curiosidades) {
+        if (c.id == id) {
+            return c;
+        }
+    }
+    return null;
+}
+
+function selectAllBotao() {
+    let elementos = getAllElementos();
+
+    for (let e of elementos) {
+        e.addEventListener("click", function () {
+            const curiosidade = getCuriosidadeByID(e.id);
+            console.log(curiosidade);
+            curiosidade.style.display = 'block';
+        });
+    }
+}
+
+selectAllBotao();
+//
+function fechar() {
+    let elementos = getAllCuriosidades();
+    let btnFechar;
+
+
+    for (let e of elementos) {
+        btnFechar = e.children[0];
+        btnFechar.addEventListener("click", function () {
+            e.style.display = 'none';
+        })
+    }
+}
+
+fechar();
+
+
 function temperatura() {
     const tempbar = document.getElementById("tempBar");
     const temperatura = document.getElementById("temperatura");
