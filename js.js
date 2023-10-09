@@ -127,7 +127,7 @@ function fora() {
                 e.classList.add('naoMetal');
             }
             if(e.classList[2] === 'mouse'){
-                e.classList.remove('metal');
+                e.classList.remove('naoMetal');
             }
         }
         if (e.classList[1] === 'lantanideo') {
@@ -176,7 +176,7 @@ ametais.addEventListener('mouseover', function () {
 function getAllCuriosidades() {
     return document.querySelectorAll('.curiosidades');
 }
-
+const invisivel = document.getElementById('invisivel');
 
 function getCuriosidadeByID(id) {
     const curiosidades = getAllCuriosidades();
@@ -197,6 +197,7 @@ function selectAllBotao() {
             const curiosidade = getCuriosidadeByID(e.id);
             console.log(curiosidade);
             curiosidade.style.display = 'block';
+            invisivel.style.display = 'block';
         });
     }
 }
@@ -212,6 +213,7 @@ function fechar() {
         btnFechar = e.children[0];
         btnFechar.addEventListener("click", function () {
             e.style.display = 'none';
+            invisivel.style.display = 'none';
         })
     }
 }
