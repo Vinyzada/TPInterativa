@@ -233,11 +233,11 @@ function temperatura() {
         for (let e of elementos) {
      
             if(Number(e.classList[2])<= t){
-                e.style.color= 'red';
+                e.style.color= 'rgb(0, 0, 255)';
                 console.log(Number(e.classList[2]));
             }
            else if(Number(e.classList[2])>t){
-                e.style.color= 'black';
+                e.style.color= 'rgb(65, 65, 65)';
                 console.log(Number(e.classList[2]));
             }
            

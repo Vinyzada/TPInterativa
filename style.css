@@ -17,8 +17,8 @@
     --metais: #E38717;
     --nao-metais: #6B94FF;
 
-    --solido: #414141;
-    --liquido: #0000ff;
+    --solido: rgb(65, 65, 65);
+    --liquido: rgb(0, 0, 255);
     --gas: #a8a8a8;
 }
 
