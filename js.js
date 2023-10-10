@@ -41,7 +41,7 @@ function fora() {
         e.style.opacity = 1;
         if (e.classList[1] === 'alcalino') {
             e.classList.add('metal');
-            if(e.classList[2] === 'ametal' || e.classList[3] === 'ametal' ){
+            if(e.classList[3] === 'ametal' || e.classList[4] === 'ametal' ){
                 e.classList.remove('metal');
                 e.classList.remove('ametal');
                 e.classList.add('naoMetal');
@@ -221,12 +221,29 @@ function fechar() {
 fechar();
 
 
+
 function temperatura() {
     const tempbar = document.getElementById("tempBar");
     const temperatura = document.getElementById("temperatura");
     tempbar.addEventListener("input", function () {
         temperatura.value = tempbar.value + "°C";
+        const t = tempbar.value;
+        console.log(temperatura.value);
+        const elementos = getAllElementos();
+        for (let e of elementos) {
+     
+            if(Number(e.classList[2])<= t){
+                e.style.color= 'red';
+                console.log(Number(e.classList[2]));
+            }
+           else if(Number(e.classList[2])>t){
+                e.style.color= 'black';
+                console.log(Number(e.classList[2]));
+            }
+           
+        }
     });
+
 }
 temperatura();
 
