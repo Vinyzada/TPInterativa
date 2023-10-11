@@ -1,12 +1,15 @@
+
+// Coleta de Elementos
 function getAllElementos() {
     return document.querySelectorAll('.elemento');
 }
 
+// Coleta de Legendas
 function getAllMouse() {
     return document.querySelectorAll('.mouse');
 }
 
-
+// Legenda em Funcionamento
 function selectAllName(name) {
     let elementos = getAllElementos();
     for (let e of elementos) {
@@ -169,12 +172,17 @@ function selectAllFamilia(familia) {
 
 metais = document.querySelector('.selectM ');
 ametais = document.querySelector('.selectA');
+
 metais.addEventListener('mouseover', function () {
     selectAllFamilia("metal");
 })
 ametais.addEventListener('mouseover', function () {
     selectAllFamilia("naoMetal");
 })
+
+// Fim da legenda em Funcionamento
+
+// Pop-up de Curiosidades
 
 function getAllCuriosidades() {
     return document.querySelectorAll('.curiosidades');
@@ -192,6 +200,7 @@ function getCuriosidadeByID(id) {
     return null;
 }
 
+
 function selectAllBotao() {
     let elementos = getAllElementos();
 
@@ -204,9 +213,8 @@ function selectAllBotao() {
         });
     }
 }
-
 selectAllBotao();
-//
+
 function fechar() {
     let elementos = getAllCuriosidades();
     let btnFechar;
@@ -220,8 +228,11 @@ function fechar() {
         })
     }
 }
-
 fechar();
+
+// Fim do Pop-up de Curiosidades
+
+// Barra de Temperatura
 
 function inicioTemperatura() {
     const elementos = getAllElementos();
@@ -240,8 +251,6 @@ function inicioTemperatura() {
         }
     }
 }
-
-
 
 function temperatura() {
     const tempbar = document.getElementById("tempBar");
@@ -269,6 +278,8 @@ function temperatura() {
 
 }
 temperatura()
+
+// Fim da Barra de Temperatura
 
 
 
