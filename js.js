@@ -193,7 +193,7 @@ function getCuriosidadeByID(id) {
     const curiosidades = getAllCuriosidades();
 
     for (let c of curiosidades) {
-        if (c.id == id) {
+        if (c.classList[1] == id) {
             return c;
         }
     }
