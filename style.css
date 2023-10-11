@@ -17,9 +17,9 @@
     --metais: #E38717;
     --nao-metais: #6B94FF;
 
-    --solido: rgb(65, 65, 65);
+    --solido: rgb(0, 0, 0);
     --liquido: rgb(0, 0, 255);
-    --gas: #a8a8a8;
+    --gas: rgb(172, 0, 0);
 }
 
 html{
@@ -152,9 +152,9 @@ html{
 .calcogenio{ background-color: var(--calcogenios); }
 .halogenio{ background-color: var(--halogenios); }
 .gasNobre{ background-color: var(--gases-nobres) }
-.solido{ color: var(--solido);}
-.liquido{ color: var(--liquido);}
-.gas{ color: var(--gas);}
+.solido{ color: var(--solido);font-weight: 500;}
+.liquido{ color: var(--liquido); font-weight: 500;}
+.gas{ color: var(--gas); font-weight: 500;}
 .lantanideo{background-color: var(--lantanideos) }
 .actinideo{background-color: var(--actinideos) }
 
@@ -235,4 +235,12 @@ input[type="text"]{
     width: 1000vw;
     display: none;
     position: absolute;
+}
+
+.elemento{
+    font-weight: 500;
+}
+
+.mouse{
+    font-weight: 400 !important;
 }
