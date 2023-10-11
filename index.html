@@ -56,7 +56,11 @@
                     </tr>
                     <tr>
                         <td class="numeroposicao">1</td>
-                        <td class="elemento alcalino -259.2 -252.9 naoMetal ametal" id="1">H</td>
+                        <td class="elemento alcalino -259.2 -252.9 naoMetal ametal" id="1">
+                            <div class="numAtomico">1</div>
+                            <div>H</div>
+                            <div class="massaAtomica">1,008</div>
+                        </td>
                         <div id="1" class="curiosidades">
                             <button class="fechar">X</button>
                             <p>H eletronegatividade: alta</p>
@@ -75,12 +79,24 @@
                                 <div class="elemento gasNobre mouse">Gases Nobres</div>
                             </div>
                         </td>
-                        <td class="elemento gasNobre -272 -268.93 naoMetal ">He</td>
+                        <td class="elemento gasNobre -272 -268.93 naoMetal ">
+                            <div class="numAtomico">2</div>
+                            <div>He</div>
+                            <div class="massaAtomica">4,0026</div>
+                        </td>
                     </tr>
                     <tr>
                         <td class="numeroposicao">2</td>
-                        <td class="elemento alcalino 180.5 1342 metal ">Li</td>
-                        <td class="elemento terroso 1287 2469 metal ">Be</td>
+                        <td class="elemento alcalino 180.5 1342 metal ">
+                            <div class="numAtomico">3</div>
+                            <div>li</div>
+                            <div class="massaAtomica">6,94</div>
+                        </td>
+                        <td class="elemento terroso 1287 2469 metal ">
+                            <div class="numAtomico">4</div>
+                            <div>Be</div>
+                            <div class="massaAtomica">9,0122</div>
+                        </td>
                         <td colspan="10" id="legenda">
                             <div class="familias">
                                 <div class="elemento lantanideo mouse"  onmouseout="fora()">Lantanideos</div> 
@@ -92,150 +108,606 @@
                                 <div class="gas" style="border: 2px solid black;">Gasoso</div>
                             </div>
                         </td>
-                        <td class="elemento familiaBoro 2180 3387 naoMetal ametal">B</td>
-                        <td class="elemento familiaCarbono 3550 4287 naoMetal ametal">C</td>
-                        <td class="elemento familiaNitrogenio -210 -195.8 naoMetal ametal">N</td>
-                        <td class="elemento calcogenio -218 -183 naoMetal ametal">O</td>
-                        <td class="elemento halogenio -219.7 -188.1 naoMetal">F</td>
-                        <td class="elemento gasNobre -248.6 -246.053  naoMetal ">Ne</td>
+                        <td class="elemento familiaBoro 2180 3387 naoMetal ametal">
+                            <div class="numAtomico">5</div>
+                            <div>B</div>
+                            <div class="massaAtomica">10,81</div>
+                        </td>
+                        <td class="elemento familiaCarbono 3550 4287 naoMetal ametal">
+                            <div class="numAtomico">6</div>
+                            <div>C</div>
+                            <div class="massaAtomica">12,011</div>
+                        </td>
+                        <td class="elemento familiaNitrogenio -210 -195.8 naoMetal ametal">
+                            <div class="numAtomico">7</div>
+                            <div>N</div>
+                            <div class="massaAtomica">14,007</div>
+                        </td>
+                        <td class="elemento calcogenio -218 -183 naoMetal ametal">
+                            <div class="numAtomico">8</div>
+                            <div>O</div>
+                            <div class="massaAtomica">15,999</div>
+                        </td>
+                        <td class="elemento halogenio -219.7 -188.1 naoMetal">
+                            <div class="numAtomico">9</div>
+                            <div>F</div>
+                            <div class="massaAtomica">18,998</div>
+                        </td>
+                        <td class="elemento gasNobre -248.6 -246.053  naoMetal ">
+                            <div class="numAtomico">10</div>
+                            <div>Ne</div>
+                            <div class="massaAtomica">20,1797</div>
+                        </td>
                     </tr>
                     <tr>
                         <td class="numeroposicao">3</td>
-                        <td class="elemento alcalino 97.79 882.8 metal ">Na</td>
-                        <td class="elemento terroso 650 1091 metal ">Mg</td>
+                        <td class="elemento alcalino 97.79 882.8 metal ">
+                            <div class="numAtomico">11</div>
+                            <div>Na</div>
+                            <div class="massaAtomica">22,990</div>
+                        </td>
+                        <td class="elemento terroso 650 1091 metal ">
+                            <div class="numAtomico">12</div>
+                            <div>Mg</div>
+                            <div class="massaAtomica">24,305</div>
+                        </td>
                         <td colspan="10" class="vacuo">
                             <input type="range" max="6000" min="-273" value="0" id="tempBar">
                             <input type="text" id="temperatura" disabled value="0°C">
                         </td>
-                        <td class="elemento familiaBoro 660.3 2.470 metal">Al</td>
-                        <td class="elemento familiaCarbono 1410 2355 naoMetal ametal">Si</td>
-                        <td class="elemento familiaNitrogenio 44.1 280.5 naoMetal ametal">P</td>
-                        <td class="elemento calcogenio 112.8 444.6 naoMetal ametal">S</td>
-                        <td class="elemento halogenio -101.5 -34.04 naoMetal">Cl</td>
-                        <td class="elemento gasNobre -189.34 -185.8 naoMetal">Ar</td>
+                        <td class="elemento familiaBoro 660.3 2.470 metal">
+                            <div class="numAtomico">13</div>
+                            <div>Al</div>
+                            <div class="massaAtomica">26,982</div>
+                        </td>
+                        <td class="elemento familiaCarbono 1410 2355 naoMetal ametal">
+                            <div class="numAtomico">14</div>
+                            <div>Si</div>
+                            <div class="massaAtomica">28,085</div>
+                        </td>
+                        <td class="elemento familiaNitrogenio 44.1 280.5 naoMetal ametal">
+                            <div class="numAtomico">16</div>
+                            <div>P</div>
+                            <div class="massaAtomica">30,974</div>
+                        </td>
+                        <td class="elemento calcogenio 112.8 444.6 naoMetal ametal">
+                            <div class="numAtomico">16</div>
+                            <div>S</div>
+                            <div class="massaAtomica">32,06</div>
+                        </td>
+                        <td class="elemento halogenio -101.5 -34.04 naoMetal">
+                            <div class="numAtomico">17</div>
+                            <div>Cl</div>
+                            <div class="massaAtomica">35,45</div>
+                        </td>
+                        <td class="elemento gasNobre -189.34 -185.8 naoMetal">
+                            <div class="numAtomico">18</div>
+                            <div>Ar</div>
+                            <div class="massaAtomica">39,948</div>
+                        </td>
                     </tr>
                     <tr>
                         <td class="numeroposicao">4</td>
-                        <td class="elemento alcalino 63.5 758.8 metal">K</td>
-                        <td class="elemento terroso 842 1484 metal">Ca</td>
-                        <td class="elemento metaisTransicao 1541 2836 metal">Sc</td>
-                        <td class="elemento metaisTransicao 1668 3287 metal">Ti</td>
-                        <td class="elemento metaisTransicao 1910 3407 metal">V</td>
-                        <td class="elemento metaisTransicao 1907 2672 metal">Cr</td>
-                        <td class="elemento metaisTransicao 1246 2061 metal">Mn</td>
-                        <td class="elemento metaisTransicao 1538 2862 metal">Fe</td>
-                        <td class="elemento metaisTransicao 1495 2870 metal">Co</td>
-                        <td class="elemento metaisTransicao 1455 2730 metal">Ni</td>
-                        <td class="elemento metaisTransicao 1085 2562 metal">Cu</td>
-                        <td class="elemento metaisTransicao 419.5 907 metal">Zn</td>
-                        <td class="elemento familiaBoro 29.76 2400 metal">Ga</td>
-                        <td class="elemento familiaCarbono 938.2 2833 metal">Ge</td>
-                        <td class="elemento familiaNitrogenio 816.8 613 naoMetal ametal">As</td>
-                        <td class="elemento calcogenio 220.8 685 naoMetal ametal">Se</td>
-                        <td class="elemento halogenio -7.2 58.8 naoMetal">Br</td>
-                        <td class="elemento gasNobre -157.36 -153.22 naoMetal">Kr</td>
+                        <td class="elemento alcalino 63.5 758.8 metal">
+                            <div class="numAtomico">19</div>
+                            <div>K</div>
+                            <div class="massaAtomica">39,098</div>
+                        </td>
+                        <td class="elemento terroso 842 1484 metal">
+                            <div class="numAtomico">20</div>
+                            <div>Ca</div>
+                            <div class="massaAtomica">40,078</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1541 2836 metal">
+                            <div class="numAtomico">21</div>
+                            <div>Sc</div>
+                            <div class="massaAtomica">44,956</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1668 3287 metal">
+                            <div class="numAtomico">22</div>
+                            <div>Ti</div>
+                            <div class="massaAtomica">47,867</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1910 3407 metal">
+                            <div class="numAtomico">23</div>
+                            <div>V</div>
+                            <div class="massaAtomica">50,942</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1907 2672 metal">
+                            <div class="numAtomico">24</div>
+                            <div>Cr</div>
+                            <div class="massaAtomica">51,9961</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1246 2061 metal">
+                            <div class="numAtomico">25</div>
+                            <div>Mn</div>
+                            <div class="massaAtomica">54,938</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1538 2862 metal">
+                            <div class="numAtomico">26</div>
+                            <div>Fe</div>
+                            <div class="massaAtomica">55,845</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1495 2870 metal">
+                            <div class="numAtomico">27</div>
+                            <div>Co</div>
+                            <div class="massaAtomica">58,933</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1455 2730 metal">
+                            <div class="numAtomico">28</div>
+                            <div>Ni</div>
+                            <div class="massaAtomica">58,693</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1085 2562 metal">
+                            <div class="numAtomico">29</div>
+                            <div>Cu</div>
+                            <div class="massaAtomica">63,546</div>
+                        </td>
+                        <td class="elemento metaisTransicao 419.5 907 metal">
+                            <div class="numAtomico">30</div>
+                            <div>Zn</div>
+                            <div class="massaAtomica">65,38</div>
+                        </td>
+                        <td class="elemento familiaBoro 29.76 2400 metal">
+                            <div class="numAtomico">31</div>
+                            <div>Ga</div>
+                            <div class="massaAtomica">69,723</div>
+                        </td>
+                        <td class="elemento familiaCarbono 938.2 2833 metal">
+                            <div class="numAtomico">32</div>
+                            <div>Ge</div>
+                            <div class="massaAtomica">72,630</div>
+                        </td>
+                        <td class="elemento familiaNitrogenio 816.8 613 naoMetal ametal">
+                            <div class="numAtomico">33</div>
+                            <div>As</div>
+                            <div class="massaAtomica">74,922</div>
+                        </td>
+                        <td class="elemento calcogenio 220.8 685 naoMetal ametal">
+                            <div class="numAtomico">34</div>
+                            <div>Se</div>
+                            <div class="massaAtomica">78,971</div>
+                        </td>
+                        <td class="elemento halogenio -7.2 58.8 naoMetal">
+                            <div class="numAtomico">35</div>
+                            <div>Br</div>
+                            <div class="massaAtomica">79,904</div>
+                        </td>
+                        <td class="elemento gasNobre -157.36 -153.22 naoMetal">
+                            <div class="numAtomico">36</div>
+                            <div>Kr</div>
+                            <div class="massaAtomica">83,798</div>
+                        </td>
                     </tr>
                     <tr>
                         <td class="numeroposicao">5</td>
-                        <td class="elemento alcalino 39.3 688 metal">Rb</td>
-                        <td class="elemento terroso 769 1384 metal">Sr</td>
-                        <td class="elemento metaisTransicao 1522 3333 metal">Y</td>
-                        <td class="elemento metaisTransicao 1852 4377 metal">Zr</td>
-                        <td class="elemento metaisTransicao 2468 4742 metal">Nb</td>
-                        <td class="elemento metaisTransicao 2623 4639 metal">Mo</td>
-                        <td class="elemento metaisTransicao 2200 4265 metal">Tc</td>
-                        <td class="elemento metaisTransicao 2334 4927 metal">Ru</td>
-                        <td class="elemento metaisTransicao 1964 3727 metal">Rh</td>
-                        <td class="elemento metaisTransicao 1554 2963 metal">Pd</td>
-                        <td class="elemento metaisTransicao 961.78 2162 metal">Ag</td>
-                        <td class="elemento metaisTransicao 321.07 767 metal">Cd</td>
-                        <td class="elemento familiaBoro 156.6 2080 metal">In</td>
-                        <td class="elemento familiaCarbono 231.93 2626 metal">Sn</td>
-                        <td class="elemento familiaNitrogenio 630.63 1580 metal">Sb</td>
-                        <td class="elemento calcogenio 449.51 988 naoMetal ametal">Te</td>
-                        <td class="elemento halogenio 113.7 184.3 naoMetal">I</td>
-                        <td class="elemento gasNobre -111.9 -107.1 naoMetal">Xe</td>
+                        <td class="elemento alcalino 39.3 688 metal">
+                            <div class="numAtomico">37</div>
+                            <div>Rb</div>
+                            <div class="massaAtomica">85,468</div>
+                        </td>
+                        <td class="elemento terroso 769 1384 metal">
+                            <div class="numAtomico">38</div>
+                            <div>Sr</div>
+                            <div class="massaAtomica">87,62</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1522 3333 metal">
+                            <div class="numAtomico">39</div>
+                            <div>Y</div>
+                            <div class="massaAtomica">88,906</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1852 4377 metal">
+                            <div class="numAtomico">40</div>
+                            <div>Zr</div>
+                            <div class="massaAtomica">91,224</div>
+                        </td>
+                        <td class="elemento metaisTransicao 2468 4742 metal">
+                            <div class="numAtomico">41</div>
+                            <div>Nb</div>
+                            <div class="massaAtomica">92,906</div>
+                        </td>
+                        <td class="elemento metaisTransicao 2623 4639 metal">
+                            <div class="numAtomico">42</div>
+                            <div>Mo</div>
+                            <div class="massaAtomica">95,95</div>
+                        </td>
+                        <td class="elemento metaisTransicao 2200 4265 metal">
+                            <div class="numAtomico">43</div>
+                            <div>Tc</div>
+                            <div class="massaAtomica">98</div>
+                        </td>
+                        <td class="elemento metaisTransicao 2334 4927 metal">
+                            <div class="numAtomico">44</div>
+                            <div>Ru</div>
+                            <div class="massaAtomica">101,07</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1964 3727 metal">
+                            <div class="numAtomico">45</div>
+                            <div>Rh</div>
+                            <div class="massaAtomica">102,91</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1554 2963 metal">
+                            <div class="numAtomico">46</div>
+                            <div>Pd</div>
+                            <div class="massaAtomica">106,42</div>
+                        </td>
+                        <td class="elemento metaisTransicao 961.78 2162 metal">
+                            <div class="numAtomico">47</div>
+                            <div>Ag</div>
+                            <div class="massaAtomica">107,87</div>
+                        </td>
+                        <td class="elemento metaisTransicao 321.07 767 metal">
+                            <div class="numAtomico">48</div>
+                            <div>Cd</div>
+                            <div class="massaAtomica">112,41</div>
+                        </td>
+                        <td class="elemento familiaBoro 156.6 2080 metal">
+                            <div class="numAtomico">49</div>
+                            <div>In</div>
+                            <div class="massaAtomica">114,82</div>
+                        </td>
+                        <td class="elemento familiaCarbono 231.93 2626 metal">
+                            <div class="numAtomico">50</div>
+                            <div>Sn</div>
+                            <div class="massaAtomica">118,71</div>
+                        </td>
+                        <td class="elemento familiaNitrogenio 630.63 1580 metal">
+                            <div class="numAtomico">51</div>
+                            <div>Sb</div>
+                            <div class="massaAtomica">121,76</div>
+                        </td>
+                        <td class="elemento calcogenio 449.51 988 naoMetal ametal">
+                            <div class="numAtomico">52</div>
+                            <div>Te</div>
+                            <div class="massaAtomica">127,6</div>
+                        </td>
+                        <td class="elemento halogenio 113.7 184.3 naoMetal">
+                            <div class="numAtomico">53</div>
+                            <div>I</div>
+                            <div class="massaAtomica">126,9</div>
+                        </td>
+                        <td class="elemento gasNobre -111.9 -107.1 naoMetal">
+                            <div class="numAtomico">54</div>
+                            <div>Xe</div>
+                            <div class="massaAtomica">131,29</div>
+                        </td>
                     </tr>
                     <tr>
                         <td class="numeroposicao">6</td>
-                        <td class="elemento alcalino 28.5 671 metal">Cs</td>
-                        <td class="elemento terroso 727 1896 metal">Ba</td>
+                        <td class="elemento alcalino 28.5 671 metal">
+                            <div class="numAtomico">55</div>
+                            <div>Cs</div>
+                            <div class="massaAtomica">132,91</div>
+                        </td>
+                        <td class="elemento terroso 727 1896 metal">
+                            <div class="numAtomico">56</div>
+                            <div>Ba</div>
+                            <div class="massaAtomica">138,33</div>
+                        </td>
                         <td class="elemento lantanideo metal">57-71</td>
-                        <td class="elemento metaisTransicao 2227 4602 metal">Hf</td>
-                        <td class="elemento metaisTransicao 3020 5457 metal">Ta</td>
-                        <td class="elemento metaisTransicao 3422 5555 metal">W</td>
-                        <td class="elemento metaisTransicao 3182 5597 metal">Re</td>
-                        <td class="elemento metaisTransicao 3033 5027 metal">Os</td>
-                        <td class="elemento metaisTransicao 2446 4428 metal">Ir</td>
-                        <td class="elemento metaisTransicao 1768 3825 metal">Pt</td>
-                        <td class="elemento metaisTransicao 1064 2836 metal">Au</td>
-                        <td class="elemento metaisTransicao -38.83 356.58 metal">Hg</td>
-                        <td class="elemento familiaBoro 303.8 1457 metal">Tl</td>
-                        <td class="elemento familiaCarbono 327.5 1749 metal">Pb</td>
-                        <td class="elemento familiaNitrogenio 271.4 1564 metal">Bi</td>
-                        <td class="elemento calcogenio 253.8 962 metal">Po</td>
-                        <td class="elemento halogenio 300 340 naoMetal">At</td>
-                        <td class="elemento gasNobre -71 -61.7 naoMetal">Rn</td>
+                        <td class="elemento metaisTransicao 2227 4602 metal">
+                            <div class="numAtomico">72</div>
+                            <div>Hf</div>
+                            <div class="massaAtomica">178,49</div>
+                        </td>
+                        <td class="elemento metaisTransicao 3020 5457 metal">
+                            <div class="numAtomico">73</div>
+                            <div>Ta</div>
+                            <div class="massaAtomica">180,95</div>
+                        </td>
+                        <td class="elemento metaisTransicao 3422 5555 metal">
+                            <div class="numAtomico">74</div>
+                            <div>W</div>
+                            <div class="massaAtomica">183,84</div>
+                        </td>
+                        <td class="elemento metaisTransicao 3182 5597 metal">
+                            <div class="numAtomico">75</div>
+                            <div>Re</div>
+                            <div class="massaAtomica">186,21</div>
+                        </td>
+                        <td class="elemento metaisTransicao 3033 5027 metal">
+                            <div class="numAtomico">76</div>
+                            <div>Os</div>
+                            <div class="massaAtomica">190,23</div>
+                        </td>
+                        <td class="elemento metaisTransicao 2446 4428 metal">
+                            <div class="numAtomico">77</div>
+                            <div>Ir</div>
+                            <div class="massaAtomica">192,22</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1768 3825 metal">
+                            <div class="numAtomico">78</div>
+                            <div>Pt</div>
+                            <div class="massaAtomica">195,08</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1064 2836 metal">
+                            <div class="numAtomico">79</div>
+                            <div>Au</div>
+                            <div class="massaAtomica">196,97</div>
+                        </td>
+                        <td class="elemento metaisTransicao -38.83 356.58 metal">
+                            <div class="numAtomico">80</div>
+                            <div>Hg</div>
+                            <div class="massaAtomica">200,59</div>
+                        </td>
+                        <td class="elemento familiaBoro 303.8 1457 metal">
+                            <div class="numAtomico">81</div>
+                            <div>Tl</div>
+                            <div class="massaAtomica">204,38</div>
+                        </td>
+                        <td class="elemento familiaCarbono 327.5 1749 metal">
+                            <div class="numAtomico">82</div>
+                            <div>Pb</div>
+                            <div class="massaAtomica">207,2</div>
+                        </td>
+                        <td class="elemento familiaNitrogenio 271.4 1564 metal">
+                            <div class="numAtomico">83</div>
+                            <div>Bi</div>
+                            <div class="massaAtomica">208,98</div>
+                        </td>
+                        <td class="elemento calcogenio 253.8 962 metal">
+                            <div class="numAtomico">84</div>
+                            <div>Po</div>
+                            <div class="massaAtomica">209</div>
+                        </td>
+                        <td class="elemento halogenio 300 340 naoMetal">
+                            <div class="numAtomico">85</div>
+                            <div>Al</div>
+                            <div class="massaAtomica">210</div>
+                        </td>
+                        <td class="elemento gasNobre -71 -61.7 naoMetal">
+                            <div class="numAtomico">86</div>
+                            <div>Rn</div>
+                            <div class="massaAtomica">222</div>
+                        </td>
                     </tr>
                     <tr>
                         <td class="numeroposicao">7</td>
-                        <td class="elemento alcalino 27 676.85 metal">Fr</td>
-                        <td class="elemento terroso 696 1500 metal">Ra</td>
+                        <td class="elemento alcalino 27 676.85 metal">
+                            <div class="numAtomico">87</div>
+                            <div>Fr</div>
+                            <div class="massaAtomica">223</div>
+                        </td>
+                        <td class="elemento terroso 696 1500 metal">
+                            <div class="numAtomico">88</div>
+                            <div>Ra</div>
+                            <div class="massaAtomica">226</div>
+                        </td>
                         <td class="elemento actinideo metal">89-103</td>
-                        <td class="elemento metaisTransicao 2100 5500 metal">Rf</td>
-                        <td class="elemento metaisTransicao 1910 3407 metal">Db</td>
-                        <td class="elemento metaisTransicao indefinido el metal">Sg</td>
-                        <td class="elemento metaisTransicao 3186 5596 metal">Bh</td>
-                        <td class="elemento metaisTransicao 3033 5012 metal">Hs</td>
-                        <td class="elemento metaisTransicao 1964 3695 metal">Mt</td>
-                        <td class="elemento metaisTransicao 1455 2913 metal">Ds</td>
-                        <td class="elemento metaisTransicao 1064.18 2856 metal">Rg</td>
-                        <td class="elemento metaisTransicao indefinido el metal">Cn</td>
-                        <td class="elemento familiaBoro 427 1127 metal">Nh</td>
-                        <td class="elemento familiaCarbono 67 147 metal">Fl</td>
-                        <td class="elemento familiaNitrogenio 430 1100 metal">Mc</td>
-                        <td class="elemento calcogenio indefinido el metal">Lv</td>
-                        <td class="elemento halogenio indefinido el naoMetal">Ts</td>
-                        <td class="elemento gasNobre 52 177 naoMetal">Og</td>
+                        <td class="elemento metaisTransicao 2100 5500 metal">
+                            <div class="numAtomico">104</div>
+                            <div>Rf</div>
+                            <div class="massaAtomica">267</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1910 3407 metal">
+                            <div class="numAtomico">105</div>
+                            <div>Db</div>
+                            <div class="massaAtomica">268</div>
+                        </td>
+                        <td class="elemento metaisTransicao indefinido el metal">
+                            <div class="numAtomico">106</div>
+                            <div>Sg</div>
+                            <div class="massaAtomica">269</div>
+                        </td>
+                        <td class="elemento metaisTransicao 3186 5596 metal">
+                            <div class="numAtomico">107</div>
+                            <div>Bh</div>
+                            <div class="massaAtomica">270</div>
+                        </td>
+                        <td class="elemento metaisTransicao 3033 5012 metal">
+                            <div class="numAtomico">108</div>
+                            <div>Hs</div>
+                            <div class="massaAtomica">269</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1964 3695 metal">
+                            <div class="numAtomico">109</div>
+                            <div>Mt</div>
+                            <div class="massaAtomica">278</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1455 2913 metal">
+                            <div class="numAtomico">110</div>
+                            <div>Ds</div>
+                            <div class="massaAtomica">281</div>
+                        </td>
+                        <td class="elemento metaisTransicao 1064.18 2856 metal">
+                            <div class="numAtomico">111</div>
+                            <div>Rg</div>
+                            <div class="massaAtomica">281</div>
+                        </td>
+                        <td class="elemento metaisTransicao indefinido el metal">
+                            <div class="numAtomico">112</div>
+                            <div>Cn</div>
+                            <div class="massaAtomica">285</div>
+                        </td>
+                        <td class="elemento familiaBoro 427 1127 metal">
+                            <div class="numAtomico">113</div>
+                            <div>Nh</div>
+                            <div class="massaAtomica">286</div>
+                        </td>
+                        <td class="elemento familiaCarbono 67 147 metal">
+                            <div class="numAtomico">114</div>
+                            <div>Fl</div>
+                            <div class="massaAtomica">289</div>
+                        </td>
+                        <td class="elemento familiaNitrogenio 430 1100 metal">
+                            <div class="numAtomico">115</div>
+                            <div>Mc</div>
+                            <div class="massaAtomica">288</div>
+                        </td>
+                        <td class="elemento calcogenio indefinido el metal">
+                            <div class="numAtomico">116</div>
+                            <div>Lv</div>
+                            <div class="massaAtomica">293</div>
+                        </td>
+                        <td class="elemento halogenio indefinido el naoMetal">
+                            <div class="numAtomico">117</div>
+                            <div>Ts</div>
+                            <div class="massaAtomica">294</div>
+                        </td>
+                        <td class="elemento gasNobre 52 177 naoMetal">
+                            <div class="numAtomico">118</div>
+                            <div>Og</div>
+                            <div class="massaAtomica">294</div>
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="19" style="height: 30px;" class="vacuo"></td>
                     </tr>
                     <tr>
                         <td colspan="4" class="vacuo"></td>
-                        <td class="elemento lantanideo 921 3464 metal">La</td>
-                        <td class="elemento lantanideo 795 3465 metal">Ce</td>
-                        <td class="elemento lantanideo 931 3820 metal">Pr</td>
-                        <td class="elemento lantanideo 1021 3074 metal">Nd</td>
-                        <td class="elemento lantanideo 1042 3000 metal">Pm</td>
-                        <td class="elemento lantanideo 1072 1794 metal">Sm</td>
-                        <td class="elemento lantanideo 826 1529 metal">Eu</td>
-                        <td class="elemento lantanideo 1312 3272 metal">Gd</td>
-                        <td class="elemento lantanideo 1356 3230 metal">Tb</td>
-                        <td class="elemento lantanideo 1412 2567 metal">Dy</td>
-                        <td class="elemento lantanideo 1474 2695 metal">Ho</td>
-                        <td class="elemento lantanideo 1529 2868 metal">Er</td>
-                        <td class="elemento lantanideo 1545 1950 metal">Tm</td>
-                        <td class="elemento lantanideo 819 1196 metal">Yb</td>
-                        <td class="elemento lantanideo 1663 3402 metal">Lu</td>
+                        <td class="elemento lantanideo 921 3464 metal">
+                            <div class="numAtomico">57</div>
+                            <div>La</div>
+                            <div class="massaAtomica">138,91</div>
+                        </td>
+                        <td class="elemento lantanideo 795 3465 metal">
+                            <div class="numAtomico">58</div>
+                            <div>Ce</div>
+                            <div class="massaAtomica">140,116</div>
+                        </td>
+                        <td class="elemento lantanideo 931 3820 metal">
+                            <div class="numAtomico">59</div>
+                            <div>Pr</div>
+                            <div class="massaAtomica">140,907</div>
+                        </td>
+                        <td class="elemento lantanideo 1021 3074 metal">
+                            <div class="numAtomico">60</div>
+                            <div>Nd</div>
+                            <div class="massaAtomica">144,24</div>
+                        </td>
+                        <td class="elemento lantanideo 1042 3000 metal">
+                            <div class="numAtomico">61</div>
+                            <div>Pm</div>
+                            <div class="massaAtomica">145</div>
+                        </td>
+                        <td class="elemento lantanideo 1072 1794 metal">
+                            <div class="numAtomico">62</div>
+                            <div>Sm</div>
+                            <div class="massaAtomica">150,36</div>
+                        </td>
+                        <td class="elemento lantanideo 826 1529 metal">
+                            <div class="numAtomico">63</div>
+                            <div>Eu</div>
+                            <div class="massaAtomica">151,96</div>
+                        </td>
+                        <td class="elemento lantanideo 1312 3272 metal">
+                            <div class="numAtomico">64</div>
+                            <div>Gd</div>
+                            <div class="massaAtomica">157,25</div>
+                        </td>
+                        <td class="elemento lantanideo 1356 3230 metal">
+                            <div class="numAtomico">65</div>
+                            <div>Tb</div>
+                            <div class="massaAtomica">158,93</div>
+                        </td>
+                        <td class="elemento lantanideo 1412 2567 metal">
+                            <div class="numAtomico">66</div>
+                            <div>Dy</div>
+                            <div class="massaAtomica">162,5</div>
+                        </td>
+                        <td class="elemento lantanideo 1474 2695 metal">
+                            <div class="numAtomico">67</div>
+                            <div>Ho</div>
+                            <div class="massaAtomica">164,93</div>
+                        </td>
+                        <td class="elemento lantanideo 1529 2868 metal">
+                            <div class="numAtomico">68</div>
+                            <div>Er</div>
+                            <div class="massaAtomica">167,26</div>
+                        </td>
+                        <td class="elemento lantanideo 1545 1950 metal">
+                            <div class="numAtomico">69</div>
+                            <div>Tm</div>
+                            <div class="massaAtomica">168,93</div>
+                        </td>
+                        <td class="elemento lantanideo 819 1196 metal">
+                            <div class="numAtomico">70</div>
+                            <div>Yb</div>
+                            <div class="massaAtomica">173,05</div>
+                        </td>
+                        <td class="elemento lantanideo 1663 3402 metal">
+                            <div class="numAtomico">71</div>
+                            <div>Lu</div>
+                            <div class="massaAtomica">174,97</div>
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="4" class="vacuo"></td>
-                        <td class="elemento actinideo 1050 3198 metal">Ac</td>
-                        <td class="elemento actinideo 1750 4788 metal">Th</td>
-                        <td class="elemento actinideo 1572 4000 metal">Pa</td>
-                        <td class="elemento actinideo 1135 4131 metal">U</td>
-                        <td class="elemento actinideo 644 3902 metal">Np</td>
-                        <td class="elemento actinideo 639.4 3228 metal">Pu</td>
-                        <td class="elemento actinideo 1176 2011 metal">Am</td>
-                        <td class="elemento actinideo 1345 3110 metal">Cm</td>
-                        <td class="elemento actinideo 986 2627 metal">Bk</td>
-                        <td class="elemento actinideo 898.8 1472 metal">Cf</td>
-                        <td class="elemento actinideo 860 900 metal">Es</td>
-                        <td class="elemento actinideo 1527 1700 metal">Fm</td>
-                        <td class="elemento actinideo 827 indefinido metal">Md</td>
-                        <td class="elemento actinideo 826.8 indefinido metal">No</td>
-                        <td class="elemento actinideo 1627 indefinido metal">Lr</td>
+                        <td class="elemento actinideo 1050 3198 metal">
+                            <div class="numAtomico">89</div>
+                            <div>Ac</div>
+                            <div class="massaAtomica">227</div>
+                        </td>
+                        <td class="elemento actinideo 1750 4788 metal">
+                            <div class="numAtomico">90</div>
+                            <div>Th</div>
+                            <div class="massaAtomica">232,04</div>
+                        </td>
+                        <td class="elemento actinideo 1572 4000 metal">
+                            <div class="numAtomico">91</div>
+                            <div>Pa</div>
+                            <div class="massaAtomica">231,04</div>
+                        </td>
+                        <td class="elemento actinideo 1135 4131 metal">
+                            <div class="numAtomico">92</div>
+                            <div>U</div>
+                            <div class="massaAtomica">238,03</div>
+                        </td>
+                        <td class="elemento actinideo 644 3902 metal">
+                            <div class="numAtomico">93</div>
+                            <div>Np</div>
+                            <div class="massaAtomica">237,048</div>
+                        </td>
+                        <td class="elemento actinideo 639.4 3228 metal">
+                            <div class="numAtomico">94</div>
+                            <div>Pu</div>
+                            <div class="massaAtomica">244</div>
+                        </td>
+                        <td class="elemento actinideo 1176 2011 metal">
+                            <div class="numAtomico">95</div>
+                            <div>Am</div>
+                            <div class="massaAtomica">243</div>
+                        </td>
+                        <td class="elemento actinideo 1345 3110 metal">
+                            <div class="numAtomico">96</div>
+                            <div>Cm</div>
+                            <div class="massaAtomica">247</div>
+                        </td>
+                        <td class="elemento actinideo 986 2627 metal">
+                            <div class="numAtomico">97</div>
+                            <div>Bk</div>
+                            <div class="massaAtomica">247</div>
+                        </td>
+                        <td class="elemento actinideo 898.8 1472 metal">
+                            <div class="numAtomico">98</div>
+                            <div>Cf</div>
+                            <div class="massaAtomica">251</div>
+                        </td>
+                        <td class="elemento actinideo 860 900 metal">
+                            <div class="numAtomico">99</div>
+                            <div>Es</div>
+                            <div class="massaAtomica">252</div>
+                        </td>
+                        <td class="elemento actinideo 1527 1700 metal">
+                            <div class="numAtomico">100</div>
+                            <div>Fm</div>
+                            <div class="massaAtomica">257</div>
+                        </td>
+                        <td class="elemento actinideo 827 indefinido metal">
+                            <div class="numAtomico">101</div>
+                            <div>Md</div>
+                            <div class="massaAtomica">258</div>
+                        </td>
+                        <td class="elemento actinideo 826.8 indefinido metal">
+                            <div class="numAtomico">102</div>
+                            <div>No</div>
+                            <div class="massaAtomica">259</div>
+                        </td>
+                        <td class="elemento actinideo 1627 indefinido metal">
+                            <div class="numAtomico">103</div>
+                            <div>Lr</div>
+                            <div class="massaAtomica">262</div>
+                        </td>
                     </tr>
                 </table>
             </div>

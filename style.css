@@ -244,3 +244,13 @@ input[type="text"]{
 .mouse{
     font-weight: 400 !important;
 }
+
+.numAtomico{
+    text-indent: 10px;
+    text-align: start;
+    font-size: 12px;
+}
+.massaAtomica{
+    text-align: center;
+    font-size: 12px;
+}
