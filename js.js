@@ -188,7 +188,6 @@ function getAllCuriosidades() {
     return document.querySelectorAll('.curiosidades');
 }
 const invisivel = document.getElementById('invisivel');
-
 function getCuriosidadeByID(id) {
     const curiosidades = getAllCuriosidades();
 
@@ -210,6 +209,7 @@ function selectAllBotao() {
             console.log(curiosidade);
             curiosidade.style.display = 'block';
             invisivel.style.display = 'block';
+            html.style.display = 'hidden'
         });
     }
 }

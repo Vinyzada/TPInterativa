@@ -238,9 +238,10 @@ input[type="text"]{
     font-weight: 300;
     margin: 20px 40px;
 }
-.xbar{
-    width: 480px;
+.curiosidades .xbar{
+    padding-right: 15px;
     text-align: end;
+    padding-bottom: 5px;
 }
 .fechar{
     color: white;
