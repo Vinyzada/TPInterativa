@@ -209,7 +209,6 @@ function selectAllBotao() {
             console.log(curiosidade);
             curiosidade.style.display = 'block';
             invisivel.style.display = 'block';
-            html.style.display = 'hidden'
         });
     }
 }
