@@ -23,6 +23,7 @@
 }
 
 html{
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -302,13 +303,24 @@ input[type="text"]{
     #periodicTable #mesa{
         overflow: hidden;
         display: flex;
-        width: 100vw;
-        overflow-x: scroll;
+        width: 99vw;
+        overflow: hidden;
+        overflow-x: visible;
         justify-content: flex-start;
+    }
+
+    td{
+        min-width: 70px;
     }
 
 }
 @media (max-width: 500px) {
+    .curiosidades{
+        position: fixed;
+        width: 400px;
+        left: calc(50vw - 200px);
+    }
+
     #bunnerTittle1{
         font-size: 90px;
         text-align: center;
