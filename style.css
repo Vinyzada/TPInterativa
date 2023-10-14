@@ -284,6 +284,11 @@ input[type="text"]{
 }
 
 @media (max-width: 1500px) {
+
+    #bunner{
+        background-position:center;
+    }
+
     #backdropfilter{
         display: flex;
         flex-direction: column;
@@ -310,7 +315,7 @@ input[type="text"]{
     }
 
     td{
-        max-width: 70px;
+        min-width: 70px;
 
     }
 
