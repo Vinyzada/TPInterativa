@@ -325,6 +325,7 @@ input[type="text"]{
         left: 5vw;
         position: fixed;
         width: 90vw;
+        height: 58vh;
     }
 
     #bunnerTittle1{
