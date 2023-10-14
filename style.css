@@ -290,7 +290,7 @@ input[type="text"]{
     }
     
     #bunnerTittle1{
-        line-height: 70%;
+        line-height: 100%;
         font-size: 110px;
         text-align: center;
     }
@@ -300,17 +300,20 @@ input[type="text"]{
         text-align: center;
     }
 
-    #periodicTable #mesa{
+    #periodicTable .table{
         overflow: hidden;
         display: flex;
-        width: 99vw;
+        width: 90vw;
         overflow: hidden;
         overflow-x: visible;
         justify-content: flex-start;
     }
 
     td{
-        min-width: 70px;
+        max-width: 50px;
+        max-height: 50px;
+        width: 50px;
+        height: 50px;
     }
 
 }
