@@ -320,7 +320,7 @@ input[type="text"]{
 @media (max-width: 500px) {
     .curiosidades{
         position: fixed;
-        width: 400px;
+        width: 90vw;
         left: calc(50vw - 200px);
     }
 
