@@ -89,15 +89,22 @@ html{
 /* Inicio Tabela Periodica */
 
 #transition{
-    margin-top: -5vh;
+    margin-top: -4.94vh;
     position: absolute;
     background-image: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
     height: 5vh;
     width: 100%;
 }
+#transition2{
+    margin-top: -4.94vh;
+    position: absolute;
+    background-image: linear-gradient(to bottom, transparent, rgb(0, 63, 158));
+    height: 5vh;
+    width: 100%;
+}
 
 #periodicTable{
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
     height: 120vh;
 }
 
@@ -282,6 +289,47 @@ input[type="text"]{
     text-align: center;
     font-size: 12px;
 }
+#atomicNumber{
+    height: 140px;
+}
+#importanciaTP{
+    font-family: var(--font-pop);
+    width: 100vw;
+    height: 140%;
+    background-color: rgb(0, 63, 158);
+    color: white;
+}
+#importanciaTP h1{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+#importanciaTP p{
+    text-indent: 80px;
+    padding: 50px 150px;
+    text-align: justify;
+    font-size: 25px;
+}
+
+footer{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: var(--font-pop);
+    color: white;
+    width: 100vw;
+    height: 15vh;
+    background-color: black;
+}
+footer ul{
+    list-style: none;
+    text-align: center;
+}
+footer img{
+    height: 12vh;
+
+}
 
 @media (max-width: 1500px) {
 
@@ -320,7 +368,29 @@ input[type="text"]{
     }
 
 }
+
+@media (max-width: 900px){
+    footer{
+        flex-direction: column;
+        height: 100%;
+    }
+    footer div{
+        margin: 25px;
+    }
+
+}
 @media (max-width: 500px) {
+    #importanciaTP h1{
+        padding: 50px 25px;
+        text-align: center;
+        font-size: 30px;
+    }
+    #importanciaTP p{
+        text-indent: 00px;
+        padding: 25px 50px 25px 50px;
+        text-align: left;
+        font-size: 20px;
+    }
     .curiosidades{
         left: 5vw;
         position: fixed;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
     <title>Tabela Interativa SEPE</title>
     <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
 </head>
+
 <body onload="inicioTemperatura()">
     <header>
 
     </header>
-   
+
     <main>
         <section id="bunner" style="background-image: url(imgs/backgroundgirlquimic.png);">
             <div id="backdropfilter">
@@ -29,9 +31,8 @@
             </div>
         </section>
         <div id="transition"></div>
-        <div id="invisivel">
-        </div>
-        <section id="periodicTable" >
+        <div id="invisivel"></div>
+        <section id="periodicTable">
             <div id="mesa">
                 <table class="table">
                     <tr>
@@ -95,10 +96,10 @@
                         </td>
                         <td colspan="10" id="legenda">
                             <div class="familias">
-                                <div class="elemento lantanideo mouse"   onmouseout="fora()">Lantanideos</div> 
-                                <div class="elemento actinideo mouse"  onmouseout="fora()">Actinideos</div>
-                                <div class="elemento selectM metal "  onmouseout="fora()">Metais</div>
-                                <div class="elemento selectA naoMetal"  onmouseout="fora()">Não Metais</div>
+                                <div class="elemento lantanideo mouse" onmouseout="fora()">Lantanideos</div>
+                                <div class="elemento actinideo mouse" onmouseout="fora()">Actinideos</div>
+                                <div class="elemento selectM metal " onmouseout="fora()">Metais</div>
+                                <div class="elemento selectA naoMetal" onmouseout="fora()">Não Metais</div>
                                 <div class="solido" style="border: 2px solid black;">Sólido</div>
                                 <div class="liquido" style="border: 2px solid black;">Líquido</div>
                                 <div class="gas" style="border: 2px solid black;">Gasoso</div>
@@ -551,7 +552,8 @@
                         <td colspan="19" style="height: 30px;" class="vacuo"></td>
                     </tr>
                     <tr>
-                        <td colspan="4" class="vacuo"></td>
+                        <td colspan="4" rowspan="2" class="vacuo"><img src="imgs/legenda.jpeg" alt="" id="atomicNumber">
+                        </td>
                         <td class="elemento lantanideo 921 3464 metal" id="57">
                             <div class="numAtomico">57</div>
                             <div>La</div>
@@ -629,7 +631,6 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="4" class="vacuo"></td>
                         <td class="elemento actinideo 1050 3198 metal" id="89">
                             <div class="numAtomico">89</div>
                             <div>Ac</div>
@@ -844,7 +845,7 @@
                             <p class="popTitulo">Sódio - Na</p>
                         </div>
                         <ul>
-                            <li class="popInfo">Eletronegatividade =  0,93</li>
+                            <li class="popInfo">Eletronegatividade = 0,93</li>
                             <li class="popInfo">Configuração eletrônica =[Ne] 3s1</li>
                             <li class="popInfo">Ponto de fusão = 97,79°C </li>
                             <li class="popInfo">Ponto de ebulição = 882,8°C</li>
@@ -861,7 +862,7 @@
                             <li class="popInfo">Configuração eletrônica = [Ne] 3s2</li>
                             <li class="popInfo">Ponto de fusão = 650 °C </li>
                             <li class="popInfo">Ponto de ebulição = 1.091 °C</li>
-                            <li class="popInfo">Estado físico entre 20°C e 25°C =  sólido</li>
+                            <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
                     </div>
                     <div class="curiosidades 13">
@@ -883,8 +884,8 @@
                             <p class="popTitulo">Silício - Si</p>
                         </div>
                         <ul>
-                            <li class="popInfo">Eletronegatividade =  1,9</li>
-                            <li class="popInfo">Configuração eletrônica =  [Ne] 3s2 3p2</li>
+                            <li class="popInfo">Eletronegatividade = 1,9</li>
+                            <li class="popInfo">Configuração eletrônica = [Ne] 3s2 3p2</li>
                             <li class="popInfo">Ponto de fusão = 1.410°C </li>
                             <li class="popInfo">Ponto de ebulição = 2.355°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
@@ -898,7 +899,7 @@
                         <ul>
                             <li class="popInfo">Eletronegatividade = 2,19</li>
                             <li class="popInfo">Configuração eletrônica = [Ne] 3s2 3p3</li>
-                            <li class="popInfo">Ponto de fusão =  44,1°C </li>
+                            <li class="popInfo">Ponto de fusão = 44,1°C </li>
                             <li class="popInfo">Ponto de ebulição = 280,5°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido </li>
                         </ul>
@@ -909,9 +910,9 @@
                             <p class="popTitulo">Enxofre - S</p>
                         </div>
                         <ul>
-                            <li class="popInfo">Eletronegatividade =  2,58</li>
+                            <li class="popInfo">Eletronegatividade = 2,58</li>
                             <li class="popInfo">Configuração eletrônica = [Ne] 3s2 3p4</li>
-                            <li class="popInfo">Ponto de fusão =  112,8°C </li>
+                            <li class="popInfo">Ponto de fusão = 112,8°C </li>
                             <li class="popInfo">Ponto de ebulição = 444,6°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido </li>
                         </ul>
@@ -936,8 +937,8 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 0</li>
-                            <li class="popInfo">Configuração eletrônica =  [Ne] 3s2 3p6</li>
-                            <li class="popInfo">Ponto de fusão =  -189,34°C </li>
+                            <li class="popInfo">Configuração eletrônica = [Ne] 3s2 3p6</li>
+                            <li class="popInfo">Ponto de fusão = -189,34°C </li>
                             <li class="popInfo">Ponto de ebulição = -185,8°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = gasoso</li>
                         </ul>
@@ -950,7 +951,7 @@
                         <ul>
                             <li class="popInfo">Eletronegatividade = 0,82</li>
                             <li class="popInfo">Configuração eletrônica = [ [Ar] 4s1</li>
-                            <li class="popInfo">Ponto de fusão =  63,5°C </li>
+                            <li class="popInfo">Ponto de fusão = 63,5°C </li>
                             <li class="popInfo">Ponto de ebulição = 758,8°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
@@ -974,9 +975,9 @@
                             <p class="popTitulo">Escândio - Sc </p>
                         </div>
                         <ul>
-                            <li class="popInfo">Eletronegatividade =  1,36</li>
+                            <li class="popInfo">Eletronegatividade = 1,36</li>
                             <li class="popInfo">Configuração eletrônica = [Ar] 3d1 4s2 </li>
-                            <li class="popInfo">Ponto de fusão =  1.541°C </li>
+                            <li class="popInfo">Ponto de fusão = 1.541°C </li>
                             <li class="popInfo">Ponto de ebulição = 2.836°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
@@ -1026,8 +1027,8 @@
                             <p class="popTitulo">Manganês - Mn</p>
                         </div>
                         <ul>
-                            <li class="popInfo">Eletronegatividade =  1,55</li>
-                            <li class="popInfo">Configuração eletrônica =  [Ar] 3d5 4s2/li>
+                            <li class="popInfo">Eletronegatividade = 1,55</li>
+                            <li class="popInfo">Configuração eletrônica = [Ar] 3d5 4s2/li>
                             <li class="popInfo">Ponto de fusão = 1.246°C </li>
                             <li class="popInfo">Ponto de ebulição = 2.061°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
@@ -1058,8 +1059,8 @@
                             <li class="popInfo">Ponto de ebulição = 2.870°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
-                    </div> 
-                     <div class="curiosidades 28">
+                    </div>
+                    <div class="curiosidades 28">
                         <div>
                             <div class="xbar"><button class="fechar">X</button></div>
                             <p class="popTitulo">Níquel - Ni</p>
@@ -1067,25 +1068,25 @@
                         <ul>
                             <li class="popInfo">Eletronegatividade = 1,91</li>
                             <li class="popInfo">Configuração eletrônica = [Ar] 3d8 4s2</li>
-                            <li class="popInfo">Ponto de fusão =  1.455°C </li>
+                            <li class="popInfo">Ponto de fusão = 1.455°C </li>
                             <li class="popInfo">Ponto de ebulição = 2.730°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
-                    </div> 
-                     <div class="curiosidades 29">
+                    </div>
+                    <div class="curiosidades 29">
                         <div>
                             <div class="xbar"><button class="fechar">X</button></div>
                             <p class="popTitulo">Cobre - Cu</p>
                         </div>
                         <ul>
-                            <li class="popInfo">Eletronegatividade =  1,9</li>
+                            <li class="popInfo">Eletronegatividade = 1,9</li>
                             <li class="popInfo">Configuração eletrônica = [Ar] 3d10 4s1</li>
                             <li class="popInfo">Ponto de fusão = 1.085°C </li>
-                            <li class="popInfo">Ponto de ebulição =  2.562°C</li>
+                            <li class="popInfo">Ponto de ebulição = 2.562°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
-                    </div> 
-                     <div class="curiosidades 30">
+                    </div>
+                    <div class="curiosidades 30">
                         <div>
                             <div class="xbar"><button class="fechar">X</button></div>
                             <p class="popTitulo">Zinco - Zn</p>
@@ -1097,7 +1098,7 @@
                             <li class="popInfo">Ponto de ebulição = 907°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
-                    </div> 
+                    </div>
                     <div class="curiosidades 31">
                         <div>
                             <div class="xbar"><button class="fechar">X</button></div>
@@ -1110,7 +1111,7 @@
                             <li class="popInfo">Ponto de ebulição = 2.400°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
-                    </div> 
+                    </div>
                     <div class="curiosidades 32">
                         <div>
                             <div class="xbar"><button class="fechar">X</button></div>
@@ -1118,12 +1119,12 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 2,01</li>
-                            <li class="popInfo">Configuração eletrônica =  [Ar] 3d10 4s2 4p2</li>
+                            <li class="popInfo">Configuração eletrônica = [Ar] 3d10 4s2 4p2</li>
                             <li class="popInfo">Ponto de fusão = 938,2°C </li>
                             <li class="popInfo">Ponto de ebulição = 2.833°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
-                    </div>  
+                    </div>
                     <div class="curiosidades 33">
                         <div>
                             <div class="xbar"><button class="fechar">X</button></div>
@@ -1136,7 +1137,7 @@
                             <li class="popInfo">Ponto de ebulição = 613°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
-                    </div>  
+                    </div>
                     <div class="curiosidades 34">
                         <div>
                             <div class="xbar"><button class="fechar">X</button></div>
@@ -1144,12 +1145,12 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 2,55</li>
-                            <li class="popInfo">Configuração eletrônica =  [Ar] 3d10 4s2 4p4</li>
+                            <li class="popInfo">Configuração eletrônica = [Ar] 3d10 4s2 4p4</li>
                             <li class="popInfo">Ponto de fusão = 220,8°C </li>
                             <li class="popInfo">Ponto de ebulição = 685°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
-                    </div>  
+                    </div>
                     <div class="curiosidades 35">
                         <div>
                             <div class="xbar"><button class="fechar">X</button></div>
@@ -1157,13 +1158,13 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 2,96</li>
-                            <li class="popInfo">Configuração eletrônica =  [Ar] 4s2 3d10 4p5</li>
+                            <li class="popInfo">Configuração eletrônica = [Ar] 4s2 3d10 4p5</li>
                             <li class="popInfo">Ponto de fusão = -7,2°C </li>
                             <li class="popInfo">Ponto de ebulição = 58,8°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = líquido</li>
                         </ul>
-                    </div> 
-                     <div class="curiosidades 36">
+                    </div>
+                    <div class="curiosidades 36">
                         <div>
                             <div class="xbar"><button class="fechar">X</button></div>
                             <p class="popTitulo">Criptônio - Kr</p>
@@ -1175,7 +1176,7 @@
                             <li class="popInfo">Ponto de ebulição = -153,22°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = gasoso</li>
                         </ul>
-                    </div>  
+                    </div>
                     <div class="curiosidades 37">
                         <div>
                             <div class="xbar"><button class="fechar">X</button></div>
@@ -1185,7 +1186,7 @@
                             <li class="popInfo">Eletronegatividade = 0,82</li>
                             <li class="popInfo">Configuração eletrônica = [Kr] 5s¹</li>
                             <li class="popInfo">Ponto de fusão = 39,3°C </li>
-                            <li class="popInfo">Ponto de ebulição =  688°C</li>
+                            <li class="popInfo">Ponto de ebulição = 688°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
                     </div>
@@ -1197,7 +1198,7 @@
                         <ul>
                             <li class="popInfo">Eletronegatividade = 0,95</li>
                             <li class="popInfo">Configuração eletrônica = [Kr] 5s²</li>
-                            <li class="popInfo">Ponto de fusão =  769°C </li>
+                            <li class="popInfo">Ponto de fusão = 769°C </li>
                             <li class="popInfo">Ponto de ebulição = 1.384°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
@@ -1276,7 +1277,7 @@
                             <li class="popInfo">Eletronegatividade = 2,2</li>
                             <li class="popInfo">Configuração eletrônica = [Kr] 4d7 5s1</li>
                             <li class="popInfo">Ponto de fusão = 2.334°C </li>
-                            <li class="popInfo">Ponto de ebulição =  4.927°C</li>
+                            <li class="popInfo">Ponto de ebulição = 4.927°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
                     </div>
@@ -1328,7 +1329,7 @@
                             <li class="popInfo">Eletronegatividade = 1,69</li>
                             <li class="popInfo">Configuração eletrônica = [Kr] 4d10 5s2</li>
                             <li class="popInfo">Ponto de fusão = 321,07°C </li>
-                            <li class="popInfo">Ponto de ebulição =  767°C</li>
+                            <li class="popInfo">Ponto de ebulição = 767°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
                     </div>
@@ -1353,7 +1354,7 @@
                         <ul>
                             <li class="popInfo">Eletronegatividade = 1,96</li>
                             <li class="popInfo">Configuração eletrônica = [Kr] 4d10 5s2 5p2</li>
-                            <li class="popInfo">Ponto de fusão =  231,93°C </li>
+                            <li class="popInfo">Ponto de fusão = 231,93°C </li>
                             <li class="popInfo">Ponto de ebulição = 2.626°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
@@ -1365,7 +1366,7 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 2,05</li>
-                            <li class="popInfo">Configuração eletrônica =  [Kr] 4d10 5s2 5p3 </li>
+                            <li class="popInfo">Configuração eletrônica = [Kr] 4d10 5s2 5p3 </li>
                             <li class="popInfo">Ponto de fusão = 630,63°C </li>
                             <li class="popInfo">Ponto de ebulição = 1.580°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
@@ -1378,7 +1379,7 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 2,1</li>
-                            <li class="popInfo">Configuração eletrônica =  [Kr] 4d10 5s2 5p4 </li>
+                            <li class="popInfo">Configuração eletrônica = [Kr] 4d10 5s2 5p4 </li>
                             <li class="popInfo">Ponto de fusão = 449,51°C </li>
                             <li class="popInfo">Ponto de ebulição = 988°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
@@ -1405,7 +1406,7 @@
                         <ul>
                             <li class="popInfo">Eletronegatividade = 0</li>
                             <li class="popInfo">Configuração eletrônica = [Kr] 4d10 5s2 5p6 </li>
-                            <li class="popInfo">Ponto de fusão =  -111,9°C </li>
+                            <li class="popInfo">Ponto de fusão = -111,9°C </li>
                             <li class="popInfo">Ponto de ebulição = -107,1°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = gasoso</li>
                         </ul>
@@ -1419,7 +1420,7 @@
                             <li class="popInfo">Eletronegatividade = 0,79 </li>
                             <li class="popInfo">Configuração eletrônica = [Xe] 6s1 </li>
                             <li class="popInfo">Ponto de fusão = 28,5°C </li>
-                            <li class="popInfo">Ponto de ebulição =  671°C</li>
+                            <li class="popInfo">Ponto de ebulição = 671°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
                     </div>
@@ -1429,8 +1430,8 @@
                             <p class="popTitulo">bário - Ba</p>
                         </div>
                         <ul>
-                            <li class="popInfo">Eletronegatividade =  0,89</li>
-                            <li class="popInfo">Configuração eletrônica =  [Xe] 6s2</li>
+                            <li class="popInfo">Eletronegatividade = 0,89</li>
+                            <li class="popInfo">Configuração eletrônica = [Xe] 6s2</li>
                             <li class="popInfo">Ponto de fusão = 727°C </li>
                             <li class="popInfo">Ponto de ebulição = 1.896°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
@@ -1444,7 +1445,7 @@
                         <ul>
                             <li class="popInfo">Eletronegatividade = 1,10</li>
                             <li class="popInfo">Configuração eletrônica = [Xe] 5d1 6s2 </li>
-                            <li class="popInfo">Ponto de fusão =  921°C </li>
+                            <li class="popInfo">Ponto de fusão = 921°C </li>
                             <li class="popInfo">Ponto de ebulição = 3.464 °C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
@@ -1456,7 +1457,7 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 1,12</li>
-                            <li class="popInfo">Configuração eletrônica =  [Xe] 4f1 5d1 6s2 </li>
+                            <li class="popInfo">Configuração eletrônica = [Xe] 4f1 5d1 6s2 </li>
                             <li class="popInfo">Ponto de fusão = 795°C </li>
                             <li class="popInfo">Ponto de ebulição = 3.465°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
@@ -1483,7 +1484,7 @@
                         <ul>
                             <li class="popInfo">Eletronegatividade = 1,14 </li>
                             <li class="popInfo">Configuração eletrônica = [Xe] 4f⁴ 6s²</li>
-                            <li class="popInfo">Ponto de fusão =  1.021°C </li>
+                            <li class="popInfo">Ponto de fusão = 1.021°C </li>
                             <li class="popInfo">Ponto de ebulição = 3.074°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
@@ -1496,7 +1497,7 @@
                         <ul>
                             <li class="popInfo">Eletronegatividade = 1,13</li>
                             <li class="popInfo">Configuração eletrônica = [Xe] 4f⁵ 6s² </li>
-                            <li class="popInfo">Ponto de fusão =  1.042°C </li>
+                            <li class="popInfo">Ponto de fusão = 1.042°C </li>
                             <li class="popInfo">Ponto de ebulição = 3000°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
@@ -1534,7 +1535,7 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 1,2 </li>
-                            <li class="popInfo">Configuração eletrônica =  [Xe] 4f7 5d1 6s2 </li>
+                            <li class="popInfo">Configuração eletrônica = [Xe] 4f7 5d1 6s2 </li>
                             <li class="popInfo">Ponto de fusão = 1.312°C </li>
                             <li class="popInfo">Ponto de ebulição = 3.272°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
@@ -1547,7 +1548,7 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 1,2 </li>
-                            <li class="popInfo">Configuração eletrônica =  [Xe] 4f⁹ 6s²</li>
+                            <li class="popInfo">Configuração eletrônica = [Xe] 4f⁹ 6s²</li>
                             <li class="popInfo">Ponto de fusão = 1.356°C </li>
                             <li class="popInfo">Ponto de ebulição = 3.230°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
@@ -1573,7 +1574,7 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 1,23 </li>
-                            <li class="popInfo">Configuração eletrônica = [Xe] 4f11 6s2  </li>
+                            <li class="popInfo">Configuração eletrônica = [Xe] 4f11 6s2 </li>
                             <li class="popInfo">Ponto de fusão = 1.474°C </li>
                             <li class="popInfo">Ponto de ebulição = 2.695°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
@@ -1625,7 +1626,7 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 1,27 </li>
-                            <li class="popInfo">Configuração eletrônica = [Xe] 4f14 5d1 6s2  </li>
+                            <li class="popInfo">Configuração eletrônica = [Xe] 4f14 5d1 6s2 </li>
                             <li class="popInfo">Ponto de fusão = 1.663°C </li>
                             <li class="popInfo">Ponto de ebulição = 3.402°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
@@ -1637,7 +1638,7 @@
                             <p class="popTitulo">Háfnio - Hf</p>
                         </div>
                         <ul>
-                            <li class="popInfo">Eletronegatividade =  1,3 </li>
+                            <li class="popInfo">Eletronegatividade = 1,3 </li>
                             <li class="popInfo">Configuração eletrônica = [Xe] 4f¹⁴ 5d² 6s²</li>
                             <li class="popInfo">Ponto de fusão = 2.227°C </li>
                             <li class="popInfo">Ponto de ebulição = 4.602°C</li>
@@ -1664,7 +1665,7 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 2,36</li>
-                            <li class="popInfo">Configuração eletrônica = [Xe] 6s² 4f¹⁴ 5d⁴  </li>
+                            <li class="popInfo">Configuração eletrônica = [Xe] 6s² 4f¹⁴ 5d⁴ </li>
                             <li class="popInfo">Ponto de fusão = 3.422°C </li>
                             <li class="popInfo">Ponto de ebulição = 5.555°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
@@ -1677,9 +1678,9 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 1,9 </li>
-                            <li class="popInfo">Configuração eletrônica = [Xe] 4f14 5d5 6s2  </li>
+                            <li class="popInfo">Configuração eletrônica = [Xe] 4f14 5d5 6s2 </li>
                             <li class="popInfo">Ponto de fusão = 3.182°C </li>
-                            <li class="popInfo">Ponto de ebulição =  5.597°C</li>
+                            <li class="popInfo">Ponto de ebulição = 5.597°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = líquido</li>
                         </ul>
                     </div>
@@ -1689,10 +1690,10 @@
                             <p class="popTitulo">Ósmio - Os</p>
                         </div>
                         <ul>
-                            <li class="popInfo">Eletronegatividade =  2,2 </li>
+                            <li class="popInfo">Eletronegatividade = 2,2 </li>
                             <li class="popInfo">Configuração eletrônica = [Xe] 4f14 5d6 6s2 </li>
                             <li class="popInfo">Ponto de fusão = 3.033°C </li>
-                            <li class="popInfo">Ponto de ebulição =  5.027°C</li>
+                            <li class="popInfo">Ponto de ebulição = 5.027°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
                     </div>
@@ -1705,7 +1706,7 @@
                             <li class="popInfo">Eletronegatividade = 2,2 </li>
                             <li class="popInfo">Configuração eletrônica = [Xe] 4f14 5d7 6s2 </li>
                             <li class="popInfo">Ponto de fusão = 2446°C </li>
-                            <li class="popInfo">Ponto de ebulição =  4428°C</li>
+                            <li class="popInfo">Ponto de ebulição = 4428°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
                         </ul>
                     </div>
@@ -1715,7 +1716,7 @@
                             <p class="popTitulo">Platina - Pt</p>
                         </div>
                         <ul>
-                            <li class="popInfo">Eletronegatividade =  2,28</li>
+                            <li class="popInfo">Eletronegatividade = 2,28</li>
                             <li class="popInfo">Configuração eletrônica = [Xe]4f¹⁴5d⁹6s¹ </li>
                             <li class="popInfo">Ponto de fusão = 1.768°C </li>
                             <li class="popInfo">Ponto de ebulição = 3.825°C</li>
@@ -1744,7 +1745,7 @@
                             <li class="popInfo">Eletronegatividade = 2 </li>
                             <li class="popInfo">Configuração eletrônica = [Xe] 4f¹⁴ 5d¹⁰ 6s²</li>
                             <li class="popInfo">Ponto de fusão = -38,83°C </li>
-                            <li class="popInfo">Ponto de ebulição =  356,58°C</li>
+                            <li class="popInfo">Ponto de ebulição = 356,58°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = líquido</li>
                         </ul>
                     </div>
@@ -1755,7 +1756,7 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 1,62 </li>
-                            <li class="popInfo">Configuração eletrônica = [Xe] 4f14 5d10 6s2 6p1  </li>
+                            <li class="popInfo">Configuração eletrônica = [Xe] 4f14 5d10 6s2 6p1 </li>
                             <li class="popInfo">Ponto de fusão = 303,8°C </li>
                             <li class="popInfo">Ponto de ebulição = 1457°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
@@ -1807,7 +1808,7 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 2,2 </li>
-                            <li class="popInfo">Configuração eletrônica =  [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵</li>
+                            <li class="popInfo">Configuração eletrônica = [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵</li>
                             <li class="popInfo">Ponto de fusão = 300°C </li>
                             <li class="popInfo">Ponto de ebulição = 340°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = sólido</li>
@@ -1820,8 +1821,8 @@
                         </div>
                         <ul>
                             <li class="popInfo">Eletronegatividade = 0 </li>
-                            <li class="popInfo">Configuração eletrônica =  [Xe] 4f14 5d10 6s2 6p6 </li>
-                            <li class="popInfo">Ponto de fusão =  -71°C </li>
+                            <li class="popInfo">Configuração eletrônica = [Xe] 4f14 5d10 6s2 6p6 </li>
+                            <li class="popInfo">Ponto de fusão = -71°C </li>
                             <li class="popInfo">Ponto de ebulição = -61,7°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = gasoso</li>
                         </ul>
@@ -1834,7 +1835,7 @@
                         <ul>
                             <li class="popInfo">Eletronegatividade = 0,79 </li>
                             <li class="popInfo">Configuração eletrônica = [Rn] 7s¹</li>
-                            <li class="popInfo">Ponto de fusão =  27°C </li>
+                            <li class="popInfo">Ponto de fusão = 27°C </li>
                             <li class="popInfo">Ponto de ebulição = 676,85°C</li>
                             <li class="popInfo">Estado físico entre 20°C e 25°C = líquido</li>
                         </ul>
@@ -2245,10 +2246,29 @@
                 </div>
             </div>
         </section>
+        <div id="transition2"></div>
+        <section id="importanciaTP">
+            <h1>Importância da Tabela Periódica</h1>
+            <p>A Tabela Periódica é uma ferramenta essencial na química que organiza os elementos com base em suas
+                propriedades, permitindo a previsão de comportamentos, classificação de elementos e auxiliando na
+                pesquisa e desenvolvimento. Ela também é uma valiosa ferramenta educacional, tornando o estudo da
+                química mais organizado e acessível. Em suma, a Tabela Periódica desempenha um papel central na ciência,
+                na indústria e na educação, sendo fundamental para a compreensão e aplicação da química.</p>
+        </section>
     </main>
     <footer>
-
+        <div>
+            <p>Contato</p>
+            <ul>
+                <li>+5547996989150</li>
+                <li>+5547992637887</li>
+                <li>+5547988428762</li>
+            </ul>
+        </div>
+        <div>&copy; 2023 TPInterativa. Todos os direitos reservados. IFC Araquari</div>
+        <div><img src="imgs/ifclogo.png" alt=""></div>
     </footer>
     <script src="js.js"></script>
 </body>
+
 </html>
