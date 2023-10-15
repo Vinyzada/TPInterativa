@@ -98,7 +98,7 @@ html{
 #transition2{
     margin-top: -4.94vh;
     position: absolute;
-    background-image: linear-gradient(to bottom, transparent, rgb(0, 63, 158));
+    background-image: linear-gradient(to bottom, transparent, rgba(110, 113, 117, 0.63));
     height: 5vh;
     width: 100%;
     z-index: -1;
@@ -298,7 +298,7 @@ input[type="text"]{
     font-family: var(--font-pop);
     width: 100vw;
     height: 140%;
-    background-color: rgb(0, 63, 158);
+    background-color: rgb(110, 113, 117);
     color: white;
 }
 #importanciaTP h1{
