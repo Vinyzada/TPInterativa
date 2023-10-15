@@ -244,6 +244,10 @@ function inicioTemperatura() {
             e.style.color = 'rgb(0, 0, 255)';
         }
 
+        else if(e.classList[2] === 'indefinido'){
+            e.style.color = '#464444';
+        }
+
         if(Number(e.classList[3]) <= 0){
             e.style.color = 'rgb(172, 0, 0)';
         }
@@ -266,6 +270,9 @@ function temperatura() {
 
             else if (Number(e.classList[2]) <= t) {
                 e.style.color = 'rgb(0, 0, 255)';
+            }
+            else if(e.classList[2] === 'indefinido'){
+                e.style.color = '#464444';
             }
             if(Number(e.classList[3]) <= t){
                 e.style.color = ' rgb(172, 0, 0)';

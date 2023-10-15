@@ -13,10 +13,9 @@
     --calcogenios: #F2668B;
     --halogenios: #049DD9;
     --gases-nobres: #803DDB;
-
     --metais: #E38717;
     --nao-metais: #6B94FF;
-
+    --desc:#464444;
     --solido: rgb(0, 0, 0);
     --liquido: rgb(0, 0, 255);
     --gas: rgb(172, 0, 0);
@@ -155,6 +154,7 @@ html{
 .solido{ color: var(--solido);font-weight: 500;}
 .liquido{ color: var(--liquido); font-weight: 500;}
 .gas{ color: var(--gas); font-weight: 500;}
+.desc{color: var(--desc); font-weight: 500;}
 .lantanideo{background-color: var(--lantanideos) }
 .actinideo{background-color: var(--actinideos) }
 
