@@ -98,7 +98,7 @@ html{
 #transition2{
     margin-top: -4.94vh;
     position: absolute;
-    background-image: linear-gradient(to bottom, transparent, rgba(110, 113, 117, 0.63));
+    background-image: linear-gradient(to bottom, transparent, rgba(110, 113, 117));
     height: 5vh;
     width: 100%;
     z-index: -1;
