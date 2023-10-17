@@ -162,7 +162,10 @@ function selectAllFamilia(familia) {
                 f.classList.remove('alcalino');
             }
         }
-        if(f.classList[1] == 'selectM' || f.classList[1] == 'selectA' ){
+        if(f.classList[1] == 'selectM' && familia == 'metal'){
+            f.style.opacity = 1;
+        }
+        else if(f.classList[1] == 'selectA' && familia == 'naoMetal'){
             f.style.opacity = 1;
         }
 
@@ -285,8 +288,87 @@ function temperatura() {
 temperatura()
 
 // Fim da Barra de Temperatura
+solido = document.querySelector('.solido');
+liquido = document.querySelector('.liquido');
+gasoso = document.querySelector('.gas');
+desc = document.querySelector('.desc');
 
+solido.addEventListener('mouseover', function () {
+    let elementos = getAllElementos();
+    for (let e of elementos) {
+        if(e.style.color == 'rgb(0, 0, 0)'){
+            e.style.opacity = 1;
+        }
+        else{
+            e.style.opacity = 0.3;
+        }
+        if(e.classList[2] == 'mouse'){
+            e.style.opacity = 1;
+        }
+        if(e.classList[1] == 'selectM' || e.classList[1] == 'selectA'){
+            e.style.opacity = 1;
+        }
+    }
+})
 
+liquido.addEventListener('mouseover', function () {
+    let elementos = getAllElementos();
+    for (let e of elementos) {
+        if(e.style.color == 'rgb(0, 0, 255)'){
+            e.style.opacity = 1;
+        }
+        else{
+            e.style.opacity = 0.3;
+        }
+         if(e.classList[2] == 'mouse'){
+            e.style.opacity = 1;
+        }
+        if(e.classList[1] == 'selectM' || e.classList[1] == 'selectA'){
+            e.style.opacity = 1;
+        }
+    }
+})
+gasoso.addEventListener('mouseover', function () {
+    let elementos = getAllElementos();
+    for (let e of elementos) {
+        if(e.style.color == 'rgb(172, 0, 0)'){
+            e.style.opacity = 1;
+        }
+        else{
+            e.style.opacity = 0.3;
+        }
+        if(e.classList[2] == 'mouse'){
+            e.style.opacity = 1;
+        }
+        if(e.classList[1] == 'selectM' || e.classList[1] == 'selectA'){
+            e.style.opacity = 1;
+        }
+    }
+})
+desc.addEventListener('mouseover', function () {
+    let elementos = getAllElementos();
+    for (let e of elementos) {
+        if(e.style.color == 'rgb(70, 68, 68)'){
+            e.style.opacity = 1;
+        }
+        else{
+            e.style.opacity = 0.3;
+        }
+        if(e.classList[2] == 'mouse'){
+            e.style.opacity = 1;
+        }
+        if(e.classList[1] == 'selectM' || e.classList[1] == 'selectA'){
+            e.style.opacity = 1;
+        }
+    }
+})
+
+function sair() {
+    let elemento = getAllElementos();
+    for (let e of elemento) {
+        e.style.opacity = 1;
+    }
+}
 
 
 
